@@ -1,26 +1,27 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Kumar Ayush</title>
-        <link rel = "stylesheet" href = "index.css" />
-        <script src="http://code.jquery.com/jquery-git.js"></script>
-        <script>
-            function sendChat()
-            {
-                document.chat.submit();
-            }
-        </script>
-    </head>
-    <body>
-        <div id = "document">
-            <form name = "chat" method = "post" action = "chat.php">
-            </form>
-
-            <div id = "chatbox_container"><center>
-                <textarea form = "chat" id = "preg" wrap = "soft" cols = "50" rows = "5" name = "chat_text"></textarea>
-                <br />
-                <input type = "button" value = "Sumbit" onclick = "sendChat()" />
-            </center></div>
-        </div>
-    </body>
+	<head>
+		<title>Kumar Ayush</title>
+		<link rel = "stylesheet" href = "main.css" />
+		<script src="http://code.jquery.com/jquery-git.js"></script>
+		<script src = "main.js"></script>
+	</head>
+	<body>
+		<div id = "document" style = "float:left">
+			<div id = "pic_y_nome">
+				<img id = "dp" src = "images/profile.jpg" />
+				<span class = "nome" id = "nome_title">kumar</span><span class = "nome" id = "nome">AYUSH</span>
+			</div>
+			<div id = "nav">
+				<ul style = "list-style:none;padding-left:0px;">
+					<li><a href = "#" onclick = "show(about)">about</a></li>
+					<li><a href = "#" onclick = "show(projects)">projects</a></li>
+					<li><a href = "#" onclick = "show(resources)">resources</a></li>
+					<li><a href = "#" onclick = "show(contact)">contact</a></li>
+					<li><a href = "#" onclick = "show(personal)">personal</a></li>
+				</ul>
+			</div>	
+		</div>
+		<div class = "right" id = "details">
+		</div>
+	</body>
 </html>

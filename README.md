@@ -1,4 +1,4 @@
-cheekujodhpur.github.io
-=======================
+Kumar Ayush
+=============
 
-This is the personal website of Kumar Ayush.
+This is the personal website of Kumar Ayush
