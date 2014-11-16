@@ -1,0 +1,26 @@
+#document
+{
+	margin:20px auto;
+	width:1000px;
+}
+.left
+{
+	float:left;
+}
+.right
+{
+	float:right;
+}
+.clear
+{
+	clear:both;
+}
+#nome_title {
+    color: gray;
+}
+
+.nome {
+font-family: arial;
+font-size: 26px;
+}
+
