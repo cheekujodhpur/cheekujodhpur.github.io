@@ -8,7 +8,7 @@ projects += '<h3>Hobby</h3><ul style = "list-style:none;"><li>Melting a Chewing 
 
 var resources = 'The following are hobby projects which could be useful to you:<br /><ul style = "list-style:none"><li></li></ul>';
 
-var personal = '<ul style = "list-style:none;"><li>7<sup>th</sup> IOAA <a href = "blog/volos-chapter0.html">>></a><br /><i>July 2013</li><br /><li>Doing good <a href = "blog/doing-good.html">>></a><br /><i>24 September 2014</i></li><br /><li>Learning German <a href = "blog/german.html">>></a><br /><i>14 October 2014</i></li><br />';
+var personal = '<ul style = "list-style:none;"><li>7<sup>th</sup> IOAA <a href = "blog/volos-chapter0.html">>></a><br /><i>July 2013</li><br /><li>Doing good <a href = "blog/doing-good.html">>></a><br /><i>24 September 2014</i></li><br /><li>Learning German <a href = "blog/german.html">>></a><br /><i>14 October 2014</i></li><br /><li>Of Peace and Ducks <a href = "blog/peace.html">>></a><br /><i>December 2014</i></li><br />';
 
 function show(x)
 {
