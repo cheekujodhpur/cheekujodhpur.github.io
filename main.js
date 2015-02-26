@@ -6,7 +6,7 @@ var projects = '<h3>Web</h3><ul style = "list-style:none;"><li><a href = "http:/
 projects += '<h3>Astronomy and Astrophysics</h3><ul style = "list-style:none;"><li>Estimating Photometric Redshift using Machine Learning Techniques<br /><b>Prof. Sajeeth Philip</b> (<i>NIUS Astronomy 2012</i>)</li><br /><br /><li>RXTE Studies: PCA Spectral Analysis for Spectral States in 4U 1630-47<br /><b>Prof. Manojendu Choudhary</b> (<i>NIUS Astronomy 2013</i>)</li></ul>';
 projects += '<h3>Hobby</h3><ul style = "list-style:none;"><li>Melting a Chewing Gum <a href = "blog/melting-chewing-gum.html">>></a><br /><i>Auust 2014</i></li><br /><li>Validating Cosmological Principle <a href = "blog/cosmological-validation.html">>></a><br /><i>August 2014</i></li><br /><li>The King under the Elevator <a href = "blog/king-under-elevator.html">>></a><br /><i>August 2014</i></li><br /><li>Milky Cool <a href = "blog/milky-cool.html">>></a><br /><i>October 2014</i><font style = "color:red"> ongoing</font></li><br /></ul>';
 
-var resources = 'The following are hobby projects which could be useful to you:<br /><ul style = "list-style:none"><li></li></ul>';
+var resources = 'The following are hobby projects which could be useful to you:<br /><ul style = "list-style:none"><li>Problems in Group Theory <a href = "blog/gruppentheorie.html">>></a></li></ul>';
 
 var personal = '<ul style = "list-style:none;"><li>7<sup>th</sup> IOAA <a href = "blog/volos-chapter0.html">>></a><br /><i>July 2013</li><br /><li>Doing good <a href = "blog/doing-good.html">>></a><br /><i>24 September 2014</i></li><br /><li>Learning German <a href = "blog/german.html">>></a><br /><i>14 October 2014</i></li><br /><li>Of Peace and Ducks <a href = "blog/peace.html">>></a><br /><i>December 2014</i></li><br />';
 
