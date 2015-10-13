@@ -5,48 +5,49 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Oct 2015 16:36:39 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Oct 2015 16:36:39 +0530</lastBuildDate>
+    <pubDate>Tue, 13 Oct 2015 22:01:07 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2015 22:01:07 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
         <title>IPhO-Rum, 46th IPhO</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;what is ipho,india hosting&lt;/p&gt;
-&lt;p&gt;academic meeting requirement&lt;/p&gt;
-&lt;p&gt;my role&lt;/p&gt;
+&lt;p&gt;The &lt;a target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/International_Physics_Olympiad&quot;&gt;International Physics Olympiad (IPhO)&lt;/a&gt; is an annual physics competition for high school students. It is one of the International Science Olympiads. The first IPhO was held in Warsaw, Poland in 1967.&lt;br /&gt;
+In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
+&lt;p&gt;The procedures involve international board meetings for discussions on question paper before it is presented to the participants et cetera. Leaders are also required to translate the question paper to their respective languages and submit to the host country. Vote on certain matters was taken by a show of hands, and files downloaded and uploaded via pendrives handled by volunteers. Discussions would require paper notes flowing through the hall.&lt;/p&gt;
+&lt;p&gt;My role, in a team of 3, involved developing a browser-based application which would automate the entire process. The entire code and documentation for IPhOrum is a Github &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/cheekujodhpur/ipho2015/&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jul 2015 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/coding/olympiad/2015/07/02/iphorum/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/coding/olympiad/2015/07/02/iphorum/</guid>
+        <link>http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</guid>
         
         
         <category>projects</category>
         
-        <category>coding</category>
+        <category>web-development</category>
         
-        <category>olympiad</category>
+        <category>international-olympiad</category>
         
       </item>
     
       <item>
         <title>Indian National Astronomy Olympiad Program 2015</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;selection procedure and about&lt;/p&gt;
-&lt;p&gt;what happens in the camp&lt;/p&gt;
-&lt;p&gt;facilitator&#39;s role&lt;/p&gt;
-&lt;p&gt;this year stuff&lt;/p&gt;
+&lt;p&gt;The National Astronomy Olympiad Program is designed to encourage students with good foundations in Physics and Mathematics and an interest in Astronomy to pursue further studies in this field. It involves a &lt;a target=&quot;_blank&quot; href=&quot;http://olympiads.hbcse.tifr.res.in/enrollment/enrollment-for-science-olympiads&quot;&gt;five stage process&lt;/a&gt; leading to participation of Indian team in International Olympiad in Astronomy and Astrophysics (IOAA).&lt;/p&gt;
+&lt;p&gt;Students selected for the third stage are invited to the Orientation Cum Selection Camp. The camp is of about three weeks duration. The camp includes several theoretical, data analysis and observation tests. Students are trained in basic concepts in astronomy and astrophysics during the camp. Orientation is provided to students especially for problem-solving in astronomy, astrophysics and for observational astronomy tests. &lt;/p&gt;
+&lt;p&gt;Since the camp is an interaction between college professors and high school students, student facilitators are invited to bridge the gap. I had the wonderful opportunity of being one of the three facilitators in 2015. Our role involved helping students with general queries regarding astronomy and academia (and life :P). We were also involved in setting up the exams and evaluating the students.&lt;/p&gt;
+&lt;p&gt;The Indian team at International Olympiad of Astronomy and Astrophysics 2015 gave the best result in all its 9 years of participation, topping the tally with 3 golds and 2 silvers and also winning the team competition.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 May 2015 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/education/olympiad/2015/05/20/indian-astronomy-programme/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/education/olympiad/2015/05/20/indian-astronomy-programme/</guid>
+        <link>http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</guid>
         
         
         <category>projects</category>
         
-        <category>education</category>
+        <category>mentoring</category>
         
-        <category>olympiad</category>
+        <category>international-olympiad</category>
         
       </item>
     
