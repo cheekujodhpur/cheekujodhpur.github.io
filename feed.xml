@@ -5,25 +5,56 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 12 Oct 2015 11:05:20 +0530</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2015 11:05:20 +0530</lastBuildDate>
+    <pubDate>Tue, 13 Oct 2015 16:36:39 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2015 16:36:39 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
+        <title>IPhO-Rum, 46th IPhO</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;what is ipho,india hosting&lt;/p&gt;
+&lt;p&gt;academic meeting requirement&lt;/p&gt;
+&lt;p&gt;my role&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Jul 2015 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/projects/coding/olympiad/2015/07/02/iphorum/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/coding/olympiad/2015/07/02/iphorum/</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>coding</category>
+        
+        <category>olympiad</category>
+        
+      </item>
+    
+      <item>
+        <title>Indian National Astronomy Olympiad Program 2015</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;selection procedure and about&lt;/p&gt;
+&lt;p&gt;what happens in the camp&lt;/p&gt;
+&lt;p&gt;facilitator&#39;s role&lt;/p&gt;
+&lt;p&gt;this year stuff&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 May 2015 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/projects/education/olympiad/2015/05/20/indian-astronomy-programme/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/education/olympiad/2015/05/20/indian-astronomy-programme/</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>education</category>
+        
+        <category>olympiad</category>
+        
+      </item>
+    
+      <item>
         <title>An X-Ray Study of Black Hole Candidate X Norma X-1</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
-
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We analyze spectral data from the Low-Mass X-Ray Binary 4U 1630-47 (X Nor X-1). This is a black hole candidate located at $\alpha = 16^\circ 34&#39; 01.61” , δ = −47^\circ 23&#39; 34.8” $. We analyze data for the period between MJD 53829.3638299 and MJD 53950.93011. This period corresponds to an outburst in the source between 2005-12-24, 10:45:54.7 and 2006-04-23, 22:19:21.5 hrs. The data is taken from the RXTE GOF archives. We extract the $3-30 \ keV$ spectra from the binned mode Standard 2 Data which has a time resolution of $16s$. We then fit the spectra obtained with a theoretical model which in addition to the main radiation mechanism takes into account, interstellar extinction along the line of sight. The model for the main radiation mechanism consists of thermal emission from a geometrically thin and optically thick disk, and non-thermal radiation modeled by a power-law, presumably from the high energy Comptonizing cloud located inside the truncated disk, as well as reection of the Compton radiation from the disk. We obtain best fit values of various parameters like the internal radius of the accretion disk, the internal temperature, flux in various bandpasses, relative magnitudes of the non-thermal Compton component and the thermal blackbody component. We provide the plots of various parameters ton understand the underlying physical mechanism giving rise to emission during this outburst phase. &lt;/p&gt;
+&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/4U_1630-47_Report.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Dec 2013 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</link>
@@ -40,19 +71,10 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
     
       <item>
         <title>Estimating Photometric Redshifts using Machine Learning Techniques</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
-
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Redshift measurements are vital to modern astrophysics. Using spectral line shifts is an accurate method to calculate redshift for a distant galaxy but the observation time to develop the spectrum is quite high and the result&#39;s accuracy has a high dependence on SNR, which drastically limits its use to applications which require us to find redshifts for a large number of objects.&lt;/p&gt;
+&lt;p&gt;A faster, though less accurate way is to correlate photometric data with redshifts. We used certain machine learning techniques to estimate photometric redshifts.&lt;/p&gt;
+&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nius-2012.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Dec 2012 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/machine-learning/astronomy/2012/12/25/estimating-photometric-redshifts/</link>

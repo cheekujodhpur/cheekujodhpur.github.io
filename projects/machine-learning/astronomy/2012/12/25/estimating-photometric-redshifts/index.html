@@ -13,6 +13,18 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <link rel="stylesheet" href="/css/main.css">
 
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+                tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+    </script>
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 
@@ -42,23 +54,13 @@
 
   <header class="post-header">
     <h1>Estimating Photometric Redshifts using Machine Learning Techniques</h1>
-    <p class="meta">Dec 25, 2012</p>
   </header>
 
   <article class="post-content">
-  <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
-
+  <p><a></a></p>
+<p>Redshift measurements are vital to modern astrophysics. Using spectral line shifts is an accurate method to calculate redshift for a distant galaxy but the observation time to develop the spectrum is quite high and the result's accuracy has a high dependence on SNR, which drastically limits its use to applications which require us to find redshifts for a large number of objects.</p>
+<p>A faster, though less accurate way is to correlate photometric data with redshifts. We used certain machine learning techniques to estimate photometric redshifts.</p>
+<p>The full report can be downloaded <a href="/media/nius-2012.pdf">here</a>.</p>
 
   </article>
 

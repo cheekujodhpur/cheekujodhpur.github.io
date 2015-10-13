@@ -51,6 +51,7 @@ a:visited { color: #205caa; }
     border-bottom:solid 1px black;
 
     padding:5px;
+    z-index:999;
 }
 
 .header-wrap
@@ -228,7 +229,7 @@ a:visited { color: #205caa; }
 {
     margin:100px auto 10px;
     display:block;
-    max-width:1000px;
+    max-width:800px;
 }
 
 /* Post styles */
@@ -237,7 +238,7 @@ a:visited { color: #205caa; }
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
-  font-size: 42px;
+  font-size: 32px;
   letter-spacing: -1.75px;
   line-height: 1;
   font-weight: 300;
@@ -253,6 +254,11 @@ a:visited { color: #205caa; }
 
 .post-content > * { margin: 20px 0; }
 
+.post-content p
+{
+    font-size:1.2em;
+    line-height:1.5em;
+}
 
 .post-content h1,
 .post-content h2,
@@ -492,4 +498,11 @@ a:visited { color: #205caa; }
     width: auto;
     margin: 0 0 15px; }
 
+}
+
+/*MathJax Style*/
+/*****************************************/
+.MathJax
+{
+    font-size: 0.9em !important;
 }
