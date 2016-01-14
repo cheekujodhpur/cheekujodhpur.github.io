@@ -5,9 +5,27 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-01-15 00:03:05 +0530</pubDate>
-    <lastBuildDate>2016-01-15 00:03:05 +0530</lastBuildDate>
+    <pubDate>2016-01-15 00:33:56 +0530</pubDate>
+    <lastBuildDate>2016-01-15 00:33:56 +0530</lastBuildDate>
     <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Variability analysis for the globular cluster NGC 2419</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nius-2015.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>2016-01-15 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/projects/astronomy/photometry/2016/01/15/variability-analysis-ngc-2419/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/astronomy/photometry/2016/01/15/variability-analysis-ngc-2419/</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>astronomy</category>
+        
+        <category>photometry</category>
+        
+      </item>
     
       <item>
         <title>IPhO-Rum, 46th IPhO</title>
