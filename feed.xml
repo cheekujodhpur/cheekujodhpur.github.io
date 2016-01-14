@@ -5,8 +5,8 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-01-15 00:33:56 +0530</pubDate>
-    <lastBuildDate>2016-01-15 00:33:56 +0530</lastBuildDate>
+    <pubDate>2016-01-15 01:15:09 +0530</pubDate>
+    <lastBuildDate>2016-01-15 01:15:09 +0530</lastBuildDate>
     <generator>Jekyll v</generator>
     
       <item>
@@ -24,6 +24,23 @@
         <category>astronomy</category>
         
         <category>photometry</category>
+        
+      </item>
+    
+      <item>
+        <title>Metapopulation and Coupled Logistic Maps</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A discussion with Prof. Mayank Vahia from TIFR inspired us to study a network of cities using non linear dynamics. The investigation led us towards the study of stability and chaos in coupled logistic maps.&lt;/p&gt;
+&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nld_project.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>2015-12-20 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>nld</category>
         
       </item>
     
