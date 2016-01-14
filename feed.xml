@@ -5,9 +5,9 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Oct 2015 22:01:07 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Oct 2015 22:01:07 +0530</lastBuildDate>
-    <generator>Jekyll v2.2.0</generator>
+    <pubDate>2016-01-15 00:03:05 +0530</pubDate>
+    <lastBuildDate>2016-01-15 00:03:05 +0530</lastBuildDate>
+    <generator>Jekyll v</generator>
     
       <item>
         <title>IPhO-Rum, 46th IPhO</title>
@@ -17,7 +17,7 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
 &lt;p&gt;The procedures involve international board meetings for discussions on question paper before it is presented to the participants et cetera. Leaders are also required to translate the question paper to their respective languages and submit to the host country. Vote on certain matters was taken by a show of hands, and files downloaded and uploaded via pendrives handled by volunteers. Discussions would require paper notes flowing through the hall.&lt;/p&gt;
 &lt;p&gt;My role, in a team of 3, involved developing a browser-based application which would automate the entire process. The entire code and documentation for IPhOrum is a Github &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/cheekujodhpur/ipho2015/&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 02 Jul 2015 23:04:22 +0530</pubDate>
+        <pubDate>2015-07-02 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</guid>
         
@@ -38,7 +38,7 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
 &lt;p&gt;Since the camp is an interaction between college professors and high school students, student facilitators are invited to bridge the gap. I had the wonderful opportunity of being one of the three facilitators in 2015. Our role involved helping students with general queries regarding astronomy and academia (and life :P). We were also involved in setting up the exams and evaluating the students.&lt;/p&gt;
 &lt;p&gt;The Indian team at International Olympiad of Astronomy and Astrophysics 2015 gave the best result in all its 9 years of participation, topping the tally with 3 golds and 2 silvers and also winning the team competition.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 May 2015 23:04:22 +0530</pubDate>
+        <pubDate>2015-05-20 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</guid>
         
@@ -54,10 +54,10 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
       <item>
         <title>An X-Ray Study of Black Hole Candidate X Norma X-1</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We analyze spectral data from the Low-Mass X-Ray Binary 4U 1630-47 (X Nor X-1). This is a black hole candidate located at $\alpha = 16^\circ 34&#39; 01.61” , δ = −47^\circ 23&#39; 34.8” $. We analyze data for the period between MJD 53829.3638299 and MJD 53950.93011. This period corresponds to an outburst in the source between 2005-12-24, 10:45:54.7 and 2006-04-23, 22:19:21.5 hrs. The data is taken from the RXTE GOF archives. We extract the $3-30 \ keV$ spectra from the binned mode Standard 2 Data which has a time resolution of $16s$. We then fit the spectra obtained with a theoretical model which in addition to the main radiation mechanism takes into account, interstellar extinction along the line of sight. The model for the main radiation mechanism consists of thermal emission from a geometrically thin and optically thick disk, and non-thermal radiation modeled by a power-law, presumably from the high energy Comptonizing cloud located inside the truncated disk, as well as reection of the Compton radiation from the disk. We obtain best fit values of various parameters like the internal radius of the accretion disk, the internal temperature, flux in various bandpasses, relative magnitudes of the non-thermal Compton component and the thermal blackbody component. We provide the plots of various parameters ton understand the underlying physical mechanism giving rise to emission during this outburst phase. &lt;/p&gt;
+&lt;p&gt;We analyze spectral data from the Low-Mass X-Ray Binary 4U 1630-47 (X Nor X-1). This is a black hole candidate located at $\alpha = 16^\circ 34' 01.61” , δ = −47^\circ 23' 34.8” $. We analyze data for the period between MJD 53829.3638299 and MJD 53950.93011. This period corresponds to an outburst in the source between 2005-12-24, 10:45:54.7 and 2006-04-23, 22:19:21.5 hrs. The data is taken from the RXTE GOF archives. We extract the $3-30 \ keV$ spectra from the binned mode Standard 2 Data which has a time resolution of $16s$. We then fit the spectra obtained with a theoretical model which in addition to the main radiation mechanism takes into account, interstellar extinction along the line of sight. The model for the main radiation mechanism consists of thermal emission from a geometrically thin and optically thick disk, and non-thermal radiation modeled by a power-law, presumably from the high energy Comptonizing cloud located inside the truncated disk, as well as reection of the Compton radiation from the disk. We obtain best fit values of various parameters like the internal radius of the accretion disk, the internal temperature, flux in various bandpasses, relative magnitudes of the non-thermal Compton component and the thermal blackbody component. We provide the plots of various parameters ton understand the underlying physical mechanism giving rise to emission during this outburst phase. &lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/4U_1630-47_Report.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 Dec 2013 23:04:22 +0530</pubDate>
+        <pubDate>2013-12-25 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</guid>
         
@@ -73,11 +73,11 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
       <item>
         <title>Estimating Photometric Redshifts using Machine Learning Techniques</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Redshift measurements are vital to modern astrophysics. Using spectral line shifts is an accurate method to calculate redshift for a distant galaxy but the observation time to develop the spectrum is quite high and the result&#39;s accuracy has a high dependence on SNR, which drastically limits its use to applications which require us to find redshifts for a large number of objects.&lt;/p&gt;
+&lt;p&gt;Redshift measurements are vital to modern astrophysics. Using spectral line shifts is an accurate method to calculate redshift for a distant galaxy but the observation time to develop the spectrum is quite high and the result's accuracy has a high dependence on SNR, which drastically limits its use to applications which require us to find redshifts for a large number of objects.&lt;/p&gt;
 &lt;p&gt;A faster, though less accurate way is to correlate photometric data with redshifts. We used certain machine learning techniques to estimate photometric redshifts.&lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nius-2012.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 25 Dec 2012 23:04:22 +0530</pubDate>
+        <pubDate>2012-12-25 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/machine-learning/astronomy/2012/12/25/estimating-photometric-redshifts/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/machine-learning/astronomy/2012/12/25/estimating-photometric-redshifts/</guid>
         
