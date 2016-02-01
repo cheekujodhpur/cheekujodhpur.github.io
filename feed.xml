@@ -5,9 +5,45 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-02-01 09:19:57 +0530</pubDate>
-    <lastBuildDate>2016-02-01 09:19:57 +0530</lastBuildDate>
+    <pubDate>2016-02-01 09:47:27 +0530</pubDate>
+    <lastBuildDate>2016-02-01 09:47:27 +0530</lastBuildDate>
     <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Photometry-Techniques and Applications</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+The fundamental principles and pre-requisites to astronomical photometry was introduced. We then proceeded to discuss some practical applications including a demonstration on light curve analysis at planethunters.org
+&lt;/p&gt;
+</description>
+        <pubDate>2016-03-03 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</guid>
+        
+        
+        <category>talks</category>
+        
+        <category>astronomy</category>
+        
+      </item>
+    
+      <item>
+        <title>MIT Scratch Day</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+We offered a workshop on MIT Scratch followed by a 3-day contest. This is aimed to be an introduction to prgramming for the freshmen batch.
+&lt;/p&gt;
+</description>
+        <pubDate>2016-02-02 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/talks/programming/2016/02/02/scratch-day/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/programming/2016/02/02/scratch-day/</guid>
+        
+        
+        <category>talks</category>
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Introduction to Positional Astronomy</title>
