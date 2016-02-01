@@ -5,9 +5,27 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-02-01 09:00:53 +0530</pubDate>
-    <lastBuildDate>2016-02-01 09:00:53 +0530</lastBuildDate>
+    <pubDate>2016-02-01 09:16:10 +0530</pubDate>
+    <lastBuildDate>2016-02-01 09:16:10 +0530</lastBuildDate>
     <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Introduction to Positional Astronomy</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+This offered an introduction to spherical trigonometry and astronomical co-ordinate systems. Fundamental applications such as prediction of eclipses were mentioned.
+&lt;/p&gt;
+</description>
+        <pubDate>2016-02-02 23:04:22 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</guid>
+        
+        
+        <category>talks</category>
+        
+        <category>astronomy</category>
+        
+      </item>
     
       <item>
         <title>Variability analysis for the globular cluster NGC 2419</title>
