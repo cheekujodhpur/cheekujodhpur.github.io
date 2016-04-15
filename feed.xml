@@ -5,9 +5,51 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-02-01 09:47:27 +0530</pubDate>
-    <lastBuildDate>2016-02-01 09:47:27 +0530</lastBuildDate>
-    <generator>Jekyll v</generator>
+    <pubDate>Fri, 15 Apr 2016 18:17:49 +0530</pubDate>
+    <lastBuildDate>Fri, 15 Apr 2016 18:17:49 +0530</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Webcam Spectrograph using RPi</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We made a webcam spectrograph using an optical CD as the diffraction grating as our course project for Waves, Oscillation and Optics (EP 226). As processing the camera images on a computer would be too boring, we used an RPi board with embedded camera which we happened to have. The RPi could process and transmit the data over WiFi enabling us to access the results from any computer, in principle. This made the spectrograph completely portable,&lt;/p&gt;
+&lt;p&gt;Our professor suggested many possible improvements onto this which would make it a cheap product for schools. They include distancing the grating from the camera and using a good grating rather than the CD which has curved grooves.&lt;/p&gt;
+&lt;p&gt;The presentation is available at &lt;a href=&quot;https://docs.google.com/presentation/d/1qCOpMDIkoW5DiRjUoKt6KazmboxlhlZCXlEeynKLJM0/edit?usp=sharing&quot;&gt;this&lt;/a&gt; drive link.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Apr 2016 23:42:04 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/projects/optics/rpi/2016/04/15/webcam-spectrograph/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/optics/rpi/2016/04/15/webcam-spectrograph/</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>optics</category>
+        
+        <category>rpi</category>
+        
+      </item>
+    
+      <item>
+        <title>3 body Simulation using FPGA</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We were supposed to make something using Terasic DE0-Nano boards equipped with Altera Cyclone IV E FPGA as a part of our course project in Digital Electronics Lab(EP 230). We went around to explore what are some things which an FPGA can do better than a CPU. Starting with High Frequency Trading and Bitcoin computation, we evolved our idea into N body simulation which we could complete for 3 body simulation. &lt;/p&gt;
+&lt;p&gt;The general idea is easy to grasp. Consider that you are simply calculating the vector r&lt;sub&gt;j&lt;/sub&gt; - r&lt;sub&gt;i&lt;/sub&gt;. This requires 3 subtractions which a simple CPU will serially do, but on an FPGA we can program three subtractors to work in parallel. The improvement in speed is challenged by a requirement of larger hardware(Flops per unit area), but hardware is cheap and time is not, thus FPGAs seek good applications in high performance computing till date.&lt;/p&gt;
+&lt;p&gt;The full abstract can be downloaded &lt;a href=&quot;/media/fpga_doc.pdf&quot;&gt;here&lt;/a&gt;, and the presentation is available at &lt;a href=&quot;https://docs.google.com/presentation/d/1tZKQbFShL-eHozx8fI_xyVnHJPRaeSnEXDdIa1Blzi0/edit?usp=sharing&quot;&gt;this&lt;/a&gt; drive link.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Apr 2016 00:42:04 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>digital-systems</category>
+        
+        <category>coding</category>
+        
+        <category>computational</category>
+        
+      </item>
     
       <item>
         <title>Photometry-Techniques and Applications</title>
@@ -16,7 +58,7 @@
 The fundamental principles and pre-requisites to astronomical photometry was introduced. We then proceeded to discuss some practical applications including a demonstration on light curve analysis at planethunters.org
 &lt;/p&gt;
 </description>
-        <pubDate>2016-03-03 23:04:22 +0530</pubDate>
+        <pubDate>Thu, 03 Mar 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</guid>
         
@@ -34,7 +76,7 @@ The fundamental principles and pre-requisites to astronomical photometry was int
 We offered a workshop on MIT Scratch followed by a 3-day contest. This is aimed to be an introduction to prgramming for the freshmen batch.
 &lt;/p&gt;
 </description>
-        <pubDate>2016-02-02 23:04:22 +0530</pubDate>
+        <pubDate>Tue, 02 Feb 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/talks/programming/2016/02/02/scratch-day/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/programming/2016/02/02/scratch-day/</guid>
         
@@ -52,7 +94,7 @@ We offered a workshop on MIT Scratch followed by a 3-day contest. This is aimed 
 This offered an introduction to spherical trigonometry and astronomical co-ordinate systems. Fundamental applications such as prediction of eclipses were mentioned.
 &lt;/p&gt;
 </description>
-        <pubDate>2016-02-02 23:04:22 +0530</pubDate>
+        <pubDate>Tue, 02 Feb 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</guid>
         
@@ -68,7 +110,7 @@ This offered an introduction to spherical trigonometry and astronomical co-ordin
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nius-2015.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2016-01-15 23:04:22 +0530</pubDate>
+        <pubDate>Fri, 15 Jan 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/astronomy/photometry/2016/01/15/variability-analysis-ngc-2419/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/astronomy/photometry/2016/01/15/variability-analysis-ngc-2419/</guid>
         
@@ -87,7 +129,7 @@ This offered an introduction to spherical trigonometry and astronomical co-ordin
 &lt;p&gt;A discussion with Prof. Mayank Vahia from TIFR inspired us to study a network of cities using non linear dynamics. The investigation led us towards the study of stability and chaos in coupled logistic maps.&lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nld_project.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2015-12-20 23:04:22 +0530</pubDate>
+        <pubDate>Sun, 20 Dec 2015 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</guid>
         
@@ -106,7 +148,7 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
 &lt;p&gt;The procedures involve international board meetings for discussions on question paper before it is presented to the participants et cetera. Leaders are also required to translate the question paper to their respective languages and submit to the host country. Vote on certain matters was taken by a show of hands, and files downloaded and uploaded via pendrives handled by volunteers. Discussions would require paper notes flowing through the hall.&lt;/p&gt;
 &lt;p&gt;My role, in a team of 3, involved developing a browser-based application which would automate the entire process. The entire code and documentation for IPhOrum is a Github &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/cheekujodhpur/ipho2015/&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2015-07-02 23:04:22 +0530</pubDate>
+        <pubDate>Thu, 02 Jul 2015 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</guid>
         
@@ -127,7 +169,7 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
 &lt;p&gt;Since the camp is an interaction between college professors and high school students, student facilitators are invited to bridge the gap. I had the wonderful opportunity of being one of the three facilitators in 2015. Our role involved helping students with general queries regarding astronomy and academia (and life :P). We were also involved in setting up the exams and evaluating the students.&lt;/p&gt;
 &lt;p&gt;The Indian team at International Olympiad of Astronomy and Astrophysics 2015 gave the best result in all its 9 years of participation, topping the tally with 3 golds and 2 silvers and also winning the team competition.&lt;/p&gt;
 </description>
-        <pubDate>2015-05-20 23:04:22 +0530</pubDate>
+        <pubDate>Wed, 20 May 2015 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</guid>
         
@@ -143,10 +185,10 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
       <item>
         <title>An X-Ray Study of Black Hole Candidate X Norma X-1</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We analyze spectral data from the Low-Mass X-Ray Binary 4U 1630-47 (X Nor X-1). This is a black hole candidate located at $\alpha = 16^\circ 34' 01.61” , δ = −47^\circ 23' 34.8” $. We analyze data for the period between MJD 53829.3638299 and MJD 53950.93011. This period corresponds to an outburst in the source between 2005-12-24, 10:45:54.7 and 2006-04-23, 22:19:21.5 hrs. The data is taken from the RXTE GOF archives. We extract the $3-30 \ keV$ spectra from the binned mode Standard 2 Data which has a time resolution of $16s$. We then fit the spectra obtained with a theoretical model which in addition to the main radiation mechanism takes into account, interstellar extinction along the line of sight. The model for the main radiation mechanism consists of thermal emission from a geometrically thin and optically thick disk, and non-thermal radiation modeled by a power-law, presumably from the high energy Comptonizing cloud located inside the truncated disk, as well as reection of the Compton radiation from the disk. We obtain best fit values of various parameters like the internal radius of the accretion disk, the internal temperature, flux in various bandpasses, relative magnitudes of the non-thermal Compton component and the thermal blackbody component. We provide the plots of various parameters ton understand the underlying physical mechanism giving rise to emission during this outburst phase. &lt;/p&gt;
+&lt;p&gt;We analyze spectral data from the Low-Mass X-Ray Binary 4U 1630-47 (X Nor X-1). This is a black hole candidate located at $\alpha = 16^\circ 34&#39; 01.61” , δ = −47^\circ 23&#39; 34.8” $. We analyze data for the period between MJD 53829.3638299 and MJD 53950.93011. This period corresponds to an outburst in the source between 2005-12-24, 10:45:54.7 and 2006-04-23, 22:19:21.5 hrs. The data is taken from the RXTE GOF archives. We extract the $3-30 \ keV$ spectra from the binned mode Standard 2 Data which has a time resolution of $16s$. We then fit the spectra obtained with a theoretical model which in addition to the main radiation mechanism takes into account, interstellar extinction along the line of sight. The model for the main radiation mechanism consists of thermal emission from a geometrically thin and optically thick disk, and non-thermal radiation modeled by a power-law, presumably from the high energy Comptonizing cloud located inside the truncated disk, as well as reection of the Compton radiation from the disk. We obtain best fit values of various parameters like the internal radius of the accretion disk, the internal temperature, flux in various bandpasses, relative magnitudes of the non-thermal Compton component and the thermal blackbody component. We provide the plots of various parameters ton understand the underlying physical mechanism giving rise to emission during this outburst phase. &lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/4U_1630-47_Report.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2013-12-25 23:04:22 +0530</pubDate>
+        <pubDate>Wed, 25 Dec 2013 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</guid>
         
@@ -156,26 +198,6 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
         <category>high-energy-astrophysics</category>
         
         <category>data-analysis</category>
-        
-      </item>
-    
-      <item>
-        <title>Estimating Photometric Redshifts using Machine Learning Techniques</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Redshift measurements are vital to modern astrophysics. Using spectral line shifts is an accurate method to calculate redshift for a distant galaxy but the observation time to develop the spectrum is quite high and the result's accuracy has a high dependence on SNR, which drastically limits its use to applications which require us to find redshifts for a large number of objects.&lt;/p&gt;
-&lt;p&gt;A faster, though less accurate way is to correlate photometric data with redshifts. We used certain machine learning techniques to estimate photometric redshifts.&lt;/p&gt;
-&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nius-2012.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>2012-12-25 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/machine-learning/astronomy/2012/12/25/estimating-photometric-redshifts/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/machine-learning/astronomy/2012/12/25/estimating-photometric-redshifts/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>machine-learning</category>
-        
-        <category>astronomy</category>
         
       </item>
     
