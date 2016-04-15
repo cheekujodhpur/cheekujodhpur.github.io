@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Introduction to Positional Astronomy</title>
+    <title>3 body Simulation using FPGA</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage">
-    <link rel="canonical" href="http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/">
+    <link rel="canonical" href="http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
@@ -55,14 +55,14 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Introduction to Positional Astronomy</h1>
+    <h1>3 body Simulation using FPGA</h1>
   </header>
 
   <article class="post-content">
   <p><a></a></p>
-<p>
-This offered an introduction to spherical trigonometry and astronomical co-ordinate systems. Fundamental applications such as prediction of eclipses were mentioned.
-</p>
+<p>We were supposed to make something using Terasic DE0-Nano boards equipped with Altera Cyclone IV E FPGA as a part of our course project in Digital Electronics Lab(EP 230). We went around to explore what are some things which an FPGA can do better than a CPU. Starting with High Frequency Trading and Bitcoin computation, we evolved our idea into N body simulation which we could complete for 3 body simulation. </p>
+<p>The general idea is easy to grasp. Consider that you are simply calculating the vector r<sub>j</sub> - r<sub>i</sub>. This requires 3 subtractions which a simple CPU will serially do, but on an FPGA we can program three subtractors to work in parallel. The improvement in speed is challenged by a requirement of larger hardware(Flops per unit area), but hardware is cheap and time is not, thus FPGAs seek good applications in high performance computing till date.</p>
+<p>The full abstract can be downloaded <a href="/media/fpga_doc.pdf">here</a>, and the presentation is available at <a href="https://docs.google.com/presentation/d/1tZKQbFShL-eHozx8fI_xyVnHJPRaeSnEXDdIa1Blzi0/edit?usp=sharing">this</a> drive link.</p>
 
   </article>
 
