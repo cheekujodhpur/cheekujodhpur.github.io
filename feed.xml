@@ -5,9 +5,29 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-04-28 19:57:13 +0530</pubDate>
-    <lastBuildDate>2016-04-28 19:57:13 +0530</lastBuildDate>
+    <pubDate>2016-05-03 18:32:16 +0530</pubDate>
+    <lastBuildDate>2016-05-03 18:32:16 +0530</lastBuildDate>
     <generator>Jekyll v</generator>
+    
+      <item>
+        <title>On DSLR-Description</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am in custody of the Canon EOS 700D camera owned by Krittika-Astronomy Club of IIT Bombay. I've always been able to have the IQ level to snap a picture from the camera required at social gatherings but have never been able to make sense of all the variety of features that it brings. &lt;/p&gt;
+&lt;p&gt;I took an attempt to study the specifications of the camera and learn how to use it to get good pictures for specific situations&lt;/p&gt;
+&lt;p&gt;The documentation can be found &lt;a href=&quot;/media/75dos_dslr.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>2016-05-03 23:50:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/misc/skills/2016/05/03/on-dslr/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/misc/skills/2016/05/03/on-dslr/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>misc</category>
+        
+        <category>skills</category>
+        
+      </item>
     
       <item>
         <title>Webcam Spectrograph using RPi</title>
@@ -179,25 +199,6 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
         <category>mentoring</category>
         
         <category>international-olympiad</category>
-        
-      </item>
-    
-      <item>
-        <title>An X-Ray Study of Black Hole Candidate X Norma X-1</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We analyze spectral data from the Low-Mass X-Ray Binary 4U 1630-47 (X Nor X-1). This is a black hole candidate located at $\alpha = 16^\circ 34' 01.61” , δ = −47^\circ 23' 34.8” $. We analyze data for the period between MJD 53829.3638299 and MJD 53950.93011. This period corresponds to an outburst in the source between 2005-12-24, 10:45:54.7 and 2006-04-23, 22:19:21.5 hrs. The data is taken from the RXTE GOF archives. We extract the $3-30 \ keV$ spectra from the binned mode Standard 2 Data which has a time resolution of $16s$. We then fit the spectra obtained with a theoretical model which in addition to the main radiation mechanism takes into account, interstellar extinction along the line of sight. The model for the main radiation mechanism consists of thermal emission from a geometrically thin and optically thick disk, and non-thermal radiation modeled by a power-law, presumably from the high energy Comptonizing cloud located inside the truncated disk, as well as reection of the Compton radiation from the disk. We obtain best fit values of various parameters like the internal radius of the accretion disk, the internal temperature, flux in various bandpasses, relative magnitudes of the non-thermal Compton component and the thermal blackbody component. We provide the plots of various parameters ton understand the underlying physical mechanism giving rise to emission during this outburst phase. &lt;/p&gt;
-&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/4U_1630-47_Report.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>2013-12-25 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/high-energy-astrophysics/data-analysis/2013/12/25/norma-x1/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>high-energy-astrophysics</category>
-        
-        <category>data-analysis</category>
         
       </item>
     
