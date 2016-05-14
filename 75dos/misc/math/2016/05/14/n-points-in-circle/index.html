@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IPhO-Rum, 46th IPhO</title>
+    <title>Circle enclosing N lattice points</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage">
-    <link rel="canonical" href="http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/">
+    <link rel="canonical" href="http://cheekujodhpur.github.io/75dos/misc/math/2016/05/14/n-points-in-circle/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
@@ -57,15 +57,19 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>IPhO-Rum, 46th IPhO</h1>
+    <h1>Circle enclosing N lattice points</h1>
   </header>
 
   <article class="post-content">
   <p><a></a></p>
-<p>The <a target="_blank" href="https://en.wikipedia.org/wiki/International_Physics_Olympiad">International Physics Olympiad (IPhO)</a> is an annual physics competition for high school students. It is one of the International Science Olympiads. The first IPhO was held in Warsaw, Poland in 1967.<br />
-In 2015, IPhO was held in Mumbai, India.</p>
-<p>The procedures involve international board meetings for discussions on question paper before it is presented to the participants et cetera. Leaders are also required to translate the question paper to their respective languages and submit to the host country. Vote on certain matters was taken by a show of hands, and files downloaded and uploaded via pendrives handled by volunteers. Discussions would require paper notes flowing through the hall.</p>
-<p>My role, in a team of 3, involved developing a browser-based application which would automate the entire process. The entire code and documentation for IPhOrum is a Github <a target="_blank" href="https://github.com/cheekujodhpur/ipho2015/">repository</a>.</p>
+<p>Did you know?<br />For every natural number N, there exists a circle enclosing exactly N lattice points!</p>
+<p><img src="https://media.giphy.com/media/26vUCSK9K5wTm5fwI/giphy.gif" alt="gif demonstrating fact" /></p>
+<p>The above was posted on the Facebook group of Math n Physics Club of my institute. It triggered a discussion about the center of such a circle with one guy commenting without reason enough that it has to be an irrational point and any irrational point would do.
+</p>
+<p>I found it interesting and thought over it while taking a shower. <i>If</i> the center is at origin, then this is impossible. If you try to enclose a point at a distance $\sqrt{d^2}$, you will find that $d^2 = x^2 + y^2$ where you don't have a unique choice of $x$ and $y$.</p>
+<p>Now note that if the center is a rational point, say $(\frac{a}{b},\frac{c}{d})$, then you can scale the space by $bd$, then the center lies at $(ad,bc)$ and then a simple translation will take you to origin and our hypothesis is reduced to the above case raising a contradiction against our assumption that the center is a rational point.</p>
+<p>Thus, the center must be an irrational point. I do not know if any irrational point would do though.</p>
+<p>My two cents!</p>
 
   </article>
 

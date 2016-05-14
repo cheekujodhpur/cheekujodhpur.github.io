@@ -5,18 +5,43 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>2016-05-03 18:32:16 +0530</pubDate>
-    <lastBuildDate>2016-05-03 18:32:16 +0530</lastBuildDate>
-    <generator>Jekyll v</generator>
+    <pubDate>Sat, 14 May 2016 14:42:31 +0530</pubDate>
+    <lastBuildDate>Sat, 14 May 2016 14:42:31 +0530</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Circle enclosing N lattice points</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Did you know?&lt;br /&gt;For every natural number N, there exists a circle enclosing exactly N lattice points!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/26vUCSK9K5wTm5fwI/giphy.gif&quot; alt=&quot;gif demonstrating fact&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The above was posted on the Facebook group of Math n Physics Club of my institute. It triggered a discussion about the center of such a circle with one guy commenting without reason enough that it has to be an irrational point and any irrational point would do.
+&lt;/p&gt;
+&lt;p&gt;I found it interesting and thought over it while taking a shower. &lt;i&gt;If&lt;/i&gt; the center is at origin, then this is impossible. If you try to enclose a point at a distance $\sqrt{d^2}$, you will find that $d^2 = x^2 + y^2$ where you don&#39;t have a unique choice of $x$ and $y$.&lt;/p&gt;
+&lt;p&gt;Now note that if the center is a rational point, say $(\frac{a}{b},\frac{c}{d})$, then you can scale the space by $bd$, then the center lies at $(ad,bc)$ and then a simple translation will take you to origin and our hypothesis is reduced to the above case raising a contradiction against our assumption that the center is a rational point.&lt;/p&gt;
+&lt;p&gt;Thus, the center must be an irrational point. I do not know if any irrational point would do though.&lt;/p&gt;
+&lt;p&gt;My two cents!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 May 2016 20:01:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/misc/math/2016/05/14/n-points-in-circle/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/misc/math/2016/05/14/n-points-in-circle/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>misc</category>
+        
+        <category>math</category>
+        
+      </item>
     
       <item>
         <title>On DSLR-Description</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am in custody of the Canon EOS 700D camera owned by Krittika-Astronomy Club of IIT Bombay. I've always been able to have the IQ level to snap a picture from the camera required at social gatherings but have never been able to make sense of all the variety of features that it brings. &lt;/p&gt;
+&lt;p&gt;I am in custody of the Canon EOS 700D camera owned by Krittika-Astronomy Club of IIT Bombay. I&#39;ve always been able to have the IQ level to snap a picture from the camera required at social gatherings but have never been able to make sense of all the variety of features that it brings. &lt;/p&gt;
 &lt;p&gt;I took an attempt to study the specifications of the camera and learn how to use it to get good pictures for specific situations&lt;/p&gt;
 &lt;p&gt;The documentation can be found &lt;a href=&quot;/media/75dos_dslr.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2016-05-03 23:50:00 +0530</pubDate>
+        <pubDate>Tue, 03 May 2016 23:50:00 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/75dos/misc/skills/2016/05/03/on-dslr/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/misc/skills/2016/05/03/on-dslr/</guid>
         
@@ -36,7 +61,7 @@
 &lt;p&gt;Our professor suggested many possible improvements onto this which would make it a cheap product for schools. They include distancing the grating from the camera and using a good grating rather than the CD which has curved grooves.&lt;/p&gt;
 &lt;p&gt;The presentation is available at &lt;a href=&quot;https://docs.google.com/presentation/d/1qCOpMDIkoW5DiRjUoKt6KazmboxlhlZCXlEeynKLJM0/edit?usp=sharing&quot;&gt;this&lt;/a&gt; drive link.&lt;/p&gt;
 </description>
-        <pubDate>2016-04-15 23:42:04 +0530</pubDate>
+        <pubDate>Fri, 15 Apr 2016 23:42:04 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/optics/rpi/2016/04/15/webcam-spectrograph/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/optics/rpi/2016/04/15/webcam-spectrograph/</guid>
         
@@ -56,7 +81,7 @@
 &lt;p&gt;The general idea is easy to grasp. Consider that you are simply calculating the vector r&lt;sub&gt;j&lt;/sub&gt; - r&lt;sub&gt;i&lt;/sub&gt;. This requires 3 subtractions which a simple CPU will serially do, but on an FPGA we can program three subtractors to work in parallel. The improvement in speed is challenged by a requirement of larger hardware(Flops per unit area), but hardware is cheap and time is not, thus FPGAs seek good applications in high performance computing till date.&lt;/p&gt;
 &lt;p&gt;The full abstract can be downloaded &lt;a href=&quot;/media/fpga_doc.pdf&quot;&gt;here&lt;/a&gt;, and the presentation is available at &lt;a href=&quot;https://docs.google.com/presentation/d/1tZKQbFShL-eHozx8fI_xyVnHJPRaeSnEXDdIa1Blzi0/edit?usp=sharing&quot;&gt;this&lt;/a&gt; drive link.&lt;/p&gt;
 </description>
-        <pubDate>2016-04-14 00:42:04 +0530</pubDate>
+        <pubDate>Thu, 14 Apr 2016 00:42:04 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/</guid>
         
@@ -78,7 +103,7 @@
 The fundamental principles and pre-requisites to astronomical photometry was introduced. We then proceeded to discuss some practical applications including a demonstration on light curve analysis at planethunters.org
 &lt;/p&gt;
 </description>
-        <pubDate>2016-03-03 23:04:22 +0530</pubDate>
+        <pubDate>Thu, 03 Mar 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</guid>
         
@@ -96,7 +121,7 @@ The fundamental principles and pre-requisites to astronomical photometry was int
 We offered a workshop on MIT Scratch followed by a 3-day contest. This is aimed to be an introduction to prgramming for the freshmen batch.
 &lt;/p&gt;
 </description>
-        <pubDate>2016-02-02 23:04:22 +0530</pubDate>
+        <pubDate>Tue, 02 Feb 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/talks/programming/2016/02/02/scratch-day/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/programming/2016/02/02/scratch-day/</guid>
         
@@ -114,7 +139,7 @@ We offered a workshop on MIT Scratch followed by a 3-day contest. This is aimed 
 This offered an introduction to spherical trigonometry and astronomical co-ordinate systems. Fundamental applications such as prediction of eclipses were mentioned.
 &lt;/p&gt;
 </description>
-        <pubDate>2016-02-02 23:04:22 +0530</pubDate>
+        <pubDate>Tue, 02 Feb 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</guid>
         
@@ -130,7 +155,7 @@ This offered an introduction to spherical trigonometry and astronomical co-ordin
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nius-2015.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2016-01-15 23:04:22 +0530</pubDate>
+        <pubDate>Fri, 15 Jan 2016 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/astronomy/photometry/2016/01/15/variability-analysis-ngc-2419/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/astronomy/photometry/2016/01/15/variability-analysis-ngc-2419/</guid>
         
@@ -149,7 +174,7 @@ This offered an introduction to spherical trigonometry and astronomical co-ordin
 &lt;p&gt;A discussion with Prof. Mayank Vahia from TIFR inspired us to study a network of cities using non linear dynamics. The investigation led us towards the study of stability and chaos in coupled logistic maps.&lt;/p&gt;
 &lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nld_project.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2015-12-20 23:04:22 +0530</pubDate>
+        <pubDate>Sun, 20 Dec 2015 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</guid>
         
@@ -168,7 +193,7 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
 &lt;p&gt;The procedures involve international board meetings for discussions on question paper before it is presented to the participants et cetera. Leaders are also required to translate the question paper to their respective languages and submit to the host country. Vote on certain matters was taken by a show of hands, and files downloaded and uploaded via pendrives handled by volunteers. Discussions would require paper notes flowing through the hall.&lt;/p&gt;
 &lt;p&gt;My role, in a team of 3, involved developing a browser-based application which would automate the entire process. The entire code and documentation for IPhOrum is a Github &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/cheekujodhpur/ipho2015/&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2015-07-02 23:04:22 +0530</pubDate>
+        <pubDate>Thu, 02 Jul 2015 23:04:22 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</link>
         <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</guid>
         
@@ -176,27 +201,6 @@ In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
         <category>projects</category>
         
         <category>web-development</category>
-        
-        <category>international-olympiad</category>
-        
-      </item>
-    
-      <item>
-        <title>Indian National Astronomy Olympiad Program 2015</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The National Astronomy Olympiad Program is designed to encourage students with good foundations in Physics and Mathematics and an interest in Astronomy to pursue further studies in this field. It involves a &lt;a target=&quot;_blank&quot; href=&quot;http://olympiads.hbcse.tifr.res.in/enrollment/enrollment-for-science-olympiads&quot;&gt;five stage process&lt;/a&gt; leading to participation of Indian team in International Olympiad in Astronomy and Astrophysics (IOAA).&lt;/p&gt;
-&lt;p&gt;Students selected for the third stage are invited to the Orientation Cum Selection Camp. The camp is of about three weeks duration. The camp includes several theoretical, data analysis and observation tests. Students are trained in basic concepts in astronomy and astrophysics during the camp. Orientation is provided to students especially for problem-solving in astronomy, astrophysics and for observational astronomy tests. &lt;/p&gt;
-&lt;p&gt;Since the camp is an interaction between college professors and high school students, student facilitators are invited to bridge the gap. I had the wonderful opportunity of being one of the three facilitators in 2015. Our role involved helping students with general queries regarding astronomy and academia (and life :P). We were also involved in setting up the exams and evaluating the students.&lt;/p&gt;
-&lt;p&gt;The Indian team at International Olympiad of Astronomy and Astrophysics 2015 gave the best result in all its 9 years of participation, topping the tally with 3 golds and 2 silvers and also winning the team competition.&lt;/p&gt;
-</description>
-        <pubDate>2015-05-20 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/mentoring/international-olympiad/2015/05/20/indian-astronomy-programme/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>mentoring</category>
         
         <category>international-olympiad</category>
         
