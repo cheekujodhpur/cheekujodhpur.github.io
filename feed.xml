@@ -5,8 +5,8 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Jun 2016 21:45:39 +0530</pubDate>
-    <lastBuildDate>Thu, 02 Jun 2016 21:45:39 +0530</lastBuildDate>
+    <pubDate>Thu, 02 Jun 2016 21:48:46 +0530</pubDate>
+    <lastBuildDate>Thu, 02 Jun 2016 21:48:46 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -45,7 +45,6 @@ But I do not understand that if I were inventing slicing, and I would want peopl
 &amp;gt;&amp;gt;&amp;gt; a[3:3]
 [3, 4, 5]
 &lt;/pre&gt;
-&lt;p&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;i&gt;DISCLAIMER: I do not claimer that this is how it went but I&#39;ll now talk about how I like to look at slicing&lt;/i&gt;
 &lt;/p&gt;
