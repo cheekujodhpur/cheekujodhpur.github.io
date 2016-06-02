@@ -5,9 +5,87 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 14 May 2016 14:42:31 +0530</pubDate>
-    <lastBuildDate>Sat, 14 May 2016 14:42:31 +0530</lastBuildDate>
+    <pubDate>Thu, 02 Jun 2016 21:45:39 +0530</pubDate>
+    <lastBuildDate>Thu, 02 Jun 2016 21:45:39 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>On Slicing Python Lists</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+A lot many are familiar with Python lists and the feature of slicing, although I find the description that most tutorials not intuitive enough. Here is how it goes.&lt;br /&gt;
+Let us start with defining an array of 10 elements
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a = [i for i in range(10)]
+&lt;/pre&gt;
+&lt;p&gt;
+Now, the following I assume you&#39;re familiar with.
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a[3:6]
+[3, 4, 5]
+&lt;/pre&gt;
+&lt;p&gt;
+And the way people think about it is selecting elements starting with &lt;i&gt;index 3&lt;/i&gt; till and including the element with &lt;i&gt;index 6-1=5.&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Do you digest that? I cannot. Why do I include the first index while not the second one? If I think in terms of indices, I have to spend my brain power in subtracting the second index by one, and I tell you I am very lazy about that. 
+&lt;br /&gt;
+Then there are people who say that you start with &lt;i&gt;index 3&lt;/i&gt; and choose &lt;i&gt;6-3=3&lt;/i&gt; elements there on. This does work because we see the following happening.
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a[4:4]
+[]
+&lt;/pre&gt;
+&lt;p&gt;
+But I do not understand that if I were inventing slicing, and I would want people to think in terms of an index and a length, why would I not just keep length as the second parameter? In this &lt;b&gt;hypothetical&lt;/b&gt; situation,
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a[3:3]
+[3, 4, 5]
+&lt;/pre&gt;
+&lt;p&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;i&gt;DISCLAIMER: I do not claimer that this is how it went but I&#39;ll now talk about how I like to look at slicing&lt;/i&gt;
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a[3:]
+[3, 4, 5, 6, 7, 8, 9]
+&lt;/pre&gt;
+&lt;p&gt;
+I like to say that doing this &lt;i&gt;skips&lt;/i&gt; the first &lt;i&gt;three&lt;/i&gt; elements and gives the rest.
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a[:6]
+[0, 1, 2, 3, 4, 5]
+&lt;/pre&gt;
+&lt;p&gt;
+And this picks the first &lt;i&gt;six&lt;/i&gt; elements. Simple really!
+&lt;/p&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt;&amp;gt; a[3:6]
+[3, 4, 5]
+&lt;/pre&gt;
+&lt;p&gt;
+This just gives the &lt;i&gt;intersection&lt;/i&gt; of the two.
+&lt;/p&gt;
+&lt;p&gt;
+My two cents.
+&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Jun 2016 02:21:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/python/programming/2016/06/03/on-splicing/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/python/programming/2016/06/03/on-splicing/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>python</category>
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Circle enclosing N lattice points</title>
@@ -182,27 +260,6 @@ This offered an introduction to spherical trigonometry and astronomical co-ordin
         <category>projects</category>
         
         <category>nld</category>
-        
-      </item>
-    
-      <item>
-        <title>IPhO-Rum, 46th IPhO</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;a target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/International_Physics_Olympiad&quot;&gt;International Physics Olympiad (IPhO)&lt;/a&gt; is an annual physics competition for high school students. It is one of the International Science Olympiads. The first IPhO was held in Warsaw, Poland in 1967.&lt;br /&gt;
-In 2015, IPhO was held in Mumbai, India.&lt;/p&gt;
-&lt;p&gt;The procedures involve international board meetings for discussions on question paper before it is presented to the participants et cetera. Leaders are also required to translate the question paper to their respective languages and submit to the host country. Vote on certain matters was taken by a show of hands, and files downloaded and uploaded via pendrives handled by volunteers. Discussions would require paper notes flowing through the hall.&lt;/p&gt;
-&lt;p&gt;My role, in a team of 3, involved developing a browser-based application which would automate the entire process. The entire code and documentation for IPhOrum is a Github &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/cheekujodhpur/ipho2015/&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Jul 2015 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/web-development/international-olympiad/2015/07/02/iphorum/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>web-development</category>
-        
-        <category>international-olympiad</category>
         
       </item>
     
