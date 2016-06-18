@@ -5,9 +5,42 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Jun 2016 21:48:46 +0530</pubDate>
-    <lastBuildDate>Thu, 02 Jun 2016 21:48:46 +0530</lastBuildDate>
+    <pubDate>Sat, 18 Jun 2016 09:39:31 +0530</pubDate>
+    <lastBuildDate>Sat, 18 Jun 2016 09:39:31 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Witcher, Game of Thrones and Predestination: Inspirations from Irish Mythology</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+I was home for the past one week, having a compulsory vacation enforced by my family. I spent it reading the Witcher series. To those of you who don&#39;t know about them, [The Witcher](https://en.wikipedia.org/wiki/Andrzej_Sapkowski#The_Witcher_Saga) is a polish fantasy series by Andrzej Sapkowski. In the opinion of many, what makes them distinctive from fantasy series like LOTR and Harry Potter are the grey shades of morality portrayed in the world. In LOTR and HP, there is a good and there is an evil and at the end of the day, the good has to triumph over evil. In Witcher, every decision taken has varying consequences for different characters; good and bad. This fascinates the eye, because of its &lt;i&gt;natural&lt;/i&gt; appeal.
+&lt;/p&gt;
+&lt;p&gt;
+Game of Thrones, the popular TV series, is the second thing that comes to my mind when you think of a grey portrayal of the world. I have not read the ASOIF books, but I am an avid follower of the show and hence believe I have an idea of the major keypoints of the show. And what I&#39;ll be talking about here are the striking similarities on some of the plotlines of Witcher and Game of Thrones. Some of them are built out of fan theories I read about GoT as well.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Political and sexual intrigue, although since Witcher centers around one individual and his destiny, the political aspects are perhaps not as elaborate as GoT.&lt;/li&gt;
+&lt;li&gt;Witcher has an elven race &lt;i&gt;Aen Sidhe&lt;/i&gt;, and GoT&#39;s white walkers are like &lt;i&gt;sidhe&lt;/i&gt; made of ice, both derived from Ao Si in Irish mythology. We also know that Children of the Forest made White Walkers so they represent &lt;i&gt;Aen Sidhe&lt;/i&gt; better, and then they have a sister race called &lt;i&gt;Aen Elle&lt;/i&gt; which looks like a representation of the Others in Irish mythology, and of WW in GoT. Witcher&#39;s &lt;i&gt;Aen Elle&lt;/i&gt; have their own version of rogue riders called the Wild Hunt.&lt;/li&gt;
+&lt;li&gt;A major problem which surrounds the world as per a prophecy is the coming of a great winter; a great iceage, the Big Winter, the Big Chill, Aep Deireadh and many other names used for a long iceage. Witcher brings in a bit of science too by discussing that this will be effectively due to a change in tilt of Earth&#39;s axis.&lt;/li&gt;
+&lt;li&gt;Both of them have a central character who can travel through Space and Time. This is Witcher&#39;s Cirilla or Ciri, and GoT&#39;s Brandon Stark. Although, in the case of GoT, it is only fan theories which talk about a predestination. Witcher, on the other hand, is very explicit to center the story around Ciri&#39;s predestination.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+I spent long hours searching for popular Irish mythological stories so we could establish a connection. Witcher was published before ASOIF and ASOIF was published by the time Witcher was well known to the English speaking world. These are just my reflections.
+&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Jun 2016 12:56:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/literature/pop/2016/06/18/on-irish-mytho/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/literature/pop/2016/06/18/on-irish-mytho/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>literature</category>
+        
+        <category>pop</category>
+        
+      </item>
     
       <item>
         <title>On Slicing Python Lists</title>
@@ -242,23 +275,6 @@ This offered an introduction to spherical trigonometry and astronomical co-ordin
         <category>astronomy</category>
         
         <category>photometry</category>
-        
-      </item>
-    
-      <item>
-        <title>Metapopulation and Coupled Logistic Maps</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A discussion with Prof. Mayank Vahia from TIFR inspired us to study a network of cities using non linear dynamics. The investigation led us towards the study of stability and chaos in coupled logistic maps.&lt;/p&gt;
-&lt;p&gt;The full report can be downloaded &lt;a href=&quot;/media/nld_project.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 20 Dec 2015 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/nld/2015/12/20/coupled-logistic-maps/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>nld</category>
         
       </item>
     
