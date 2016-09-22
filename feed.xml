@@ -5,9 +5,35 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 22 Sep 2016 23:05:23 +0530</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 23:05:23 +0530</lastBuildDate>
+    <pubDate>Thu, 22 Sep 2016 23:46:39 +0530</pubDate>
+    <lastBuildDate>Thu, 22 Sep 2016 23:46:39 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>A black hole through the looking glass: Part 1</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I assume you have seen &lt;i&gt;Interstellar&lt;/i&gt;, the famed Nolan movie. Now having a black hole in the scene brings a natural question &quot;How does a black hole look?&quot; Well, a dark patch on the sky simply models the black hole, or more precisely, everything inside the Schwarschild radius of the BH. A more interesting question, then is to ask &quot;How do things look around a black hole?&quot; Even a law major would&#39;ve come across enough popular science to know that light bends around a black hole. If you stretch your imagination, you can see objects getting distorted and being able to see things not in direct line of vision.&lt;/p&gt;
+&lt;p&gt;If you want to be a bit accurate about all this and generate a CGI of how it&#39;ll really look, &lt;a target=&quot;_blank&quot; href=&quot;https://arxiv.org/abs/1502.03809&quot;&gt;this (arXiv 1502.03609)&lt;/a&gt; is what was done for Interstellar. They describe it well enough that any one with a fair amount of knowledge of coding can try it out at home, and in fact explicitly encourage this for students.&lt;/p&gt;
+&lt;p&gt;If you Google &lt;i&gt;black hole raytracing&lt;/i&gt; or something similar, then you get a beautiful &lt;a target=&quot;_blank&quot; href=&quot;http://rantonels.github.io/starless/&quot;&gt;code&lt;/a&gt;. Frankly, I did not feel very good at seeing this. This does almost everything that I wanted to do, until I realized something about this and the other Relativistic Ray Tracing codes written for astrophysical research. They solve some metrics in some situations, and only take into account specific scattering models which do not help if I want to look at the situation out of an astrophysical scenario.&lt;/p&gt;
+&lt;p&gt;I am sure I&#39;d have left you pondering about what do I really want to do then over the last few sentences. I&#39;ll be exemplar in requesting you to imagine how would your face look if we&#39;re sitting across a table and there is a blackhole hovering between us. Yes, this probably does not have direct value to astroph research, but when you think about it, our faces can easily be replaced by accretion disks and the scattering model of reflection/refraction which is used in such scenarios can be replaced with an astrophysically relevant scattering model.&lt;/p&gt;
+&lt;p&gt;And hence begins the journey of trying to see how would a black hole look if it were kept in your room.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Sep 2016 04:46:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/project/relativity/graphics/hpc/2016/09/23/grsmallpt-1/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/project/relativity/graphics/hpc/2016/09/23/grsmallpt-1/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>project</category>
+        
+        <category>relativity</category>
+        
+        <category>graphics</category>
+        
+        <category>hpc</category>
+        
+      </item>
     
       <item>
         <title>CS475m Assignment 1 Report</title>
@@ -326,24 +352,6 @@ We offered a workshop on MIT Scratch followed by a 3-day contest. This is aimed 
         <category>talks</category>
         
         <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Introduction to Positional Astronomy</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-This offered an introduction to spherical trigonometry and astronomical co-ordinate systems. Fundamental applications such as prediction of eclipses were mentioned.
-&lt;/p&gt;
-</description>
-        <pubDate>Tue, 02 Feb 2016 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/02/02/positional-astronomy/</guid>
-        
-        
-        <category>talks</category>
-        
-        <category>astronomy</category>
         
       </item>
     
