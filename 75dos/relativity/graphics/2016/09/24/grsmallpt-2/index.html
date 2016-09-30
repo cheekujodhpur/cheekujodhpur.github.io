@@ -71,7 +71,21 @@
 
 <p>I had <i>legendary</i> ideas on how I can move my ray along 3d pixels, also called voxels by many. If the voxel I am in intersects with some sphere in the scene, I break down the current voxel in 8 smaller voxels and travel along them, repeating this until I am some epsilon away from the sphere. Of course when I say <i>legendary</i> I mean stupid. Because here is what I got.</p>
 <p><img alt="voxel" style="width:500px;border:solid 1px black;" src="/media/grsmallpt/voxel.png" /><br />
-<span style="font-size:16px;">Fig 1. Original Result</span><br /></p>
+<span style="font-size:16px;">Fig 2. My First Try</span><br /></p>
+
+<p>It took me two weeks, which also involve my mid semester examinations to realize that the only thing that I needed to correct it is to get away with this voxel business. You see, the way I detected if the ray hits a sphere in a certain voxel or not was by advancing the ray to the next voxel and checking if the ray is in opposite sides (in or out) of the sphere in the two cases, for every sphere in the scene. Doing this by advancing a ray through quantized voxels was just adding to the inaccuracy. I simply use the position of the ray I get from the numerical integration function and I go ahead with it. Here is what I get.</p>
+<p><img alt="novoxel" style="width:500px;border:solid 1px black;" src="/media/grsmallpt/novoxel.png" /><br />
+<span style="font-size:16px;">Fig 3. Correcting for voxel</span><br /></p>
+
+<p>At first glance, I was really happy at this point, but on a <i>closer</i> inspection I realized that there is no refraction in my code. If you take a look at the original result at this point and you are more observant than I was for a while, you'll see that the sphere on the right is a refracting sphere where my code makes it reflective as well. Well, to be more technically precise, my code makes it specular reflective. Everything has some diffuse reflection anyways. It does not take more than an hour of walk around Hiranandani Gardens in Powai before I understand what's up, but I'll skip a week ahead when I finally have the image corected. The rays always stop a bit outside the sphere, but the resulting rays after refraction need to start a little inside. It was a different case with smallpt where you could reject one of the two solutions of the intersection solution but here I had to manually push the ray inside by as much as it is outside the sphere. Here is the output</p>
+<p><img alt="refraction" style="width:500px;border:solid 1px black;" src="/media/grsmallpt/refraction.png" /><br />
+<span style="font-size:16px;">Fig 4. Correcting for refraction</span><br /></p>
+
+<p>It looks very similar to the original result I know, but at this point you need to stop trying to be ultra observant with human eyes and rely on taking a diff of the two images to notice that there is a dark patch around the equator of the second sphere in my output which should not exist. Now I'll jump straight to how to correct it, without trying to explain why it works, because I know I'll fail at that. The epsilon within which I detect that the ray hits the sphere was set at the machine epsilon for double in cpp. I reduced it to five orders of magnitude higher than that and the following is the output I got.</p>
+<p><img alt="final" style="width:500px;border:solid 1px black;" src="/media/grsmallpt/final.png" /><br />
+<span style="font-size:16px;">Fig 5. The correct output?</span><br /></p>
+
+<p>Yippee!</p>
 
   </article>
 
