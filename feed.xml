@@ -5,9 +5,64 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 30 Sep 2016 16:10:07 +0530</pubDate>
-    <lastBuildDate>Fri, 30 Sep 2016 16:10:07 +0530</lastBuildDate>
+    <pubDate>Fri, 30 Sep 2016 22:37:42 +0530</pubDate>
+    <lastBuildDate>Fri, 30 Sep 2016 22:37:42 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>CS475m Assignment 2 Report</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;This was a group assignment and the report represents joint efforts of &lt;br /&gt;&lt;b&gt;Keshav Srinivasan&lt;/b&gt; (140260001) and &lt;b&gt;Kumar Ayush&lt;/b&gt; (140260016)&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;This report describes the hierarchical structure of the bicycle and contains some images from different viewpoints.&lt;/p&gt;
+&lt;h3&gt;The hierarchical Structure&lt;/h3&gt;
+&lt;pre&gt;
+- Frame -
+        |
+        - Back Wheel -
+                     |
+                     - Back Gear
+        - Seat
+        - Handle Rod - 
+                     |
+                     - Front Wheel
+                     - Handle
+        - Pedal Shaft -
+                      |
+                      - Pedals
+                      - Front Gear
+        - Gear Chain
+&lt;/pre&gt;
+
+&lt;h3&gt;Commands you should use while running the program&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Use &lt;i&gt;k&lt;/i&gt; for Side View Toggle&lt;/li&gt;
+    &lt;li&gt;Use &lt;i&gt;v&lt;/i&gt; for Top View Toggle&lt;/li&gt;
+    &lt;li&gt;Use &lt;i&gt;h&lt;/i&gt; and &lt;i&gt;H&lt;/i&gt; for decreasing and increasing seat height respectively&lt;/li&gt;
+    &lt;li&gt;Use &lt;i&gt;left&lt;/i&gt; and &lt;i&gt;right&lt;/i&gt; arrow keys to move front wheel&lt;/li&gt;
+    &lt;li&gt;Use &lt;i&gt;top&lt;/i&gt; and &lt;i&gt;bottom&lt;/i&gt; arrow keys to move back wheel&lt;/li&gt;
+    &lt;li&gt;Use &lt;i&gt;PgUp&lt;/i&gt; and &lt;i&gt;PgDown&lt;/i&gt; arrow keys to rotate handle&lt;/li&gt;
+    &lt;li&gt;Use &lt;i&gt;x&lt;/i&gt; and &lt;i&gt;X&lt;/i&gt; to rotate pedals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Model Images&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma2/front.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Cycle Front View&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma2/isometric.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. Isometric View&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Oct 2016 03:51:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/10/01/cs475m-a2/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/10/01/cs475m-a2/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>assignment</category>
+        
+        <category>graphics</category>
+        
+      </item>
     
       <item>
         <title>A black hole through the looking glass: Part 2</title>
@@ -352,24 +407,6 @@ My two cents.
         <category>coding</category>
         
         <category>computational</category>
-        
-      </item>
-    
-      <item>
-        <title>Photometry-Techniques and Applications</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-The fundamental principles and pre-requisites to astronomical photometry was introduced. We then proceeded to discuss some practical applications including a demonstration on light curve analysis at planethunters.org
-&lt;/p&gt;
-</description>
-        <pubDate>Thu, 03 Mar 2016 23:04:22 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/talks/astronomy/2016/03/03/photometry/</guid>
-        
-        
-        <category>talks</category>
-        
-        <category>astronomy</category>
         
       </item>
     
