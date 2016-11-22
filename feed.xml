@@ -5,8 +5,8 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Nov 2016 14:07:22 +0530</pubDate>
-    <lastBuildDate>Tue, 22 Nov 2016 14:07:22 +0530</lastBuildDate>
+    <pubDate>Tue, 22 Nov 2016 14:23:05 +0530</pubDate>
+    <lastBuildDate>Tue, 22 Nov 2016 14:23:05 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -21,10 +21,27 @@ We solve the above stated rendering problem using ray tracing. In conventional r
 
 &lt;h3&gt;Results&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig7_myring.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Einstein Ring&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. There is a light source behind the black hole. Although there are no light rays reaching directly at us, they can curve around the black hole and reach the camera, forming what is known as an Einstein Ring&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig6_acc.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. Accretion Disk&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. This is a rectangular torus, modelling an accretion disk around a black hole. There is a texture mapped onto its surface, which was the image of an arbitrary star field&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig9_artistic.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 3. This is the image of a black hole put right in the center of the Cornell Room.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Below is a GIF of the black hole growing inside the room. For certain sizes, you can see multiple rings, which is a geometric result&lt;/p&gt;
+
+&lt;blockquote class=&quot;imgur-embed-pub&quot; lang=&quot;en&quot; data-id=&quot;a/rDada&quot;&gt;&lt;a href=&quot;//imgur.com/rDada&quot;&gt;What if I put a Black Hole in a Box?&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//s.imgur.com/min/embed.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig10_glassbh.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 4. This is the black hole put inside the glass sphere&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note a video below where the black hole inside the glass sphere grows in size&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Reyb7ZIphgU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can see the full report &lt;a href=&quot;/media/cs490_report.pdf&quot;&gt;here&lt;/a&gt;, and the presentation &amp;lt;a href=#&quot;&amp;gt;here.&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Nov 2016 18:51:00 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/75dos/rnd/graphics/relativity/2016/11/22/cs490/</link>
