@@ -5,8 +5,8 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Nov 2016 10:55:15 +0530</pubDate>
-    <lastBuildDate>Wed, 23 Nov 2016 10:55:15 +0530</lastBuildDate>
+    <pubDate>Wed, 23 Nov 2016 11:02:59 +0530</pubDate>
+    <lastBuildDate>Wed, 23 Nov 2016 11:02:59 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -24,7 +24,7 @@
 
 &lt;h3&gt;Screenshots&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_1.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;This is the loading screen. This is a map of our world, and three levels indicated by pointers. They aren’t very different maps, jus the type of monsters is a bit different&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;This is the loading screen. This is a map of our world, and three levels indicated by pointers. They aren’t very different maps, just the type of monsters is a bit different&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_2.png&quot; /&gt;&lt;br /&gt;
 &lt;span style=&quot;font-size:16px;&quot;&gt;Vampires are coming. You need to put fantasy warriors on the map ahead of them to stop them. On the top right, the first number you see is the coin you have, and it takes about 25 to spawn one. The second and third numbers are the wave number and score, separated by a colon.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
@@ -34,6 +34,8 @@
 
 &lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_4.png&quot; /&gt;&lt;br /&gt;
 &lt;span style=&quot;font-size:16px;&quot;&gt;Dragon is the last enemy in the last wave. You kill it, you win. Simple game, simple life.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can try out the game &lt;a href=&quot;https://drive.google.com/drive/folders/0B1OWcwK4S40-OV9zY2NMWTZIOWs?usp=sharing&quot;&gt;here&lt;/a&gt;. You need the &lt;i&gt;Soraka Revenge&#39;s Data&lt;/i&gt; folder along with the .exe to run it. You should also watch the introduction videos in the link above.&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Nov 2016 15:46:00 +0530</pubDate>
         <link>http://cheekujodhpur.github.io/75dos/gamejam/dev/2016/11/23/sorakas-revenge/</link>
