@@ -5,9 +5,48 @@
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
     <link>http://cheekujodhpur.github.io/</link>
     <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Nov 2016 15:20:55 +0530</pubDate>
-    <lastBuildDate>Tue, 22 Nov 2016 15:20:55 +0530</lastBuildDate>
+    <pubDate>Wed, 23 Nov 2016 10:55:15 +0530</pubDate>
+    <lastBuildDate>Wed, 23 Nov 2016 10:55:15 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Lenovo Game Jam: Soraka&#39;s Revenge</title>
+        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sometime in the Fall of 2015, me and three of my friends (Keshav Srinivasan, Mikail Khona, Anuj Shetty) participated in a GameJam by Lenovo. We had to make a game from scratch in 72 hours. None of us had any experience in gaming whatsoever before this. (n00bs) I will partially describe the techincal details, while you enjoy the screenshots from the game below.&lt;/p&gt;
+&lt;p&gt;The theme given to us was &lt;i&gt;Tower Defense&lt;/i&gt;, and we ended up making a Plants vs Zombies kind of setup, but with vampires and monsters, and warriors defending a castle. We used Unity Personal Edition to make this game, and used characters and sound effectsfrom free resources all over the internet, and used music from the Witcher 3. This kind of plagiarism is what happens when you don&#39;t have time to be artistic, yet want high poly characters in the game. We got a penalty for this and got an honorable mention prize. But the following are the key new concepts we learnt: &lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Collision boxes: I had known about them just by playing games, but the importance of specifying them properly based on utility and character sizes became relevant only after doing this project.&lt;/li&gt;
+    &lt;li&gt;Animation State Diagrams: I had never imagined that the concepts on finite state diagrams that we learnt in our Digital Systems would be so elegantly useful here&lt;/li&gt;
+    &lt;li&gt;Particle Effects: It was not obvious that their animation procedure will have to be so different than character animation. We&#39;ve used this on our cannons fired from the castle.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Screenshot Time!&lt;/p&gt;
+
+&lt;h3&gt;Screenshots&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_1.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;This is the loading screen. This is a map of our world, and three levels indicated by pointers. They aren’t very different maps, jus the type of monsters is a bit different&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_2.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Vampires are coming. You need to put fantasy warriors on the map ahead of them to stop them. On the top right, the first number you see is the coin you have, and it takes about 25 to spawn one. The second and third numbers are the wave number and score, separated by a colon.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_3.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Surprise! Yep, there is a dragon.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_4.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Dragon is the last enemy in the last wave. You kill it, you win. Simple game, simple life.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Nov 2016 15:46:00 +0530</pubDate>
+        <link>http://cheekujodhpur.github.io/75dos/gamejam/dev/2016/11/23/sorakas-revenge/</link>
+        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/gamejam/dev/2016/11/23/sorakas-revenge/</guid>
+        
+        
+        <category>75dos</category>
+        
+        <category>gamejam</category>
+        
+        <category>dev</category>
+        
+      </item>
     
       <item>
         <title>CS490 RnD Post: Ray tracing in Curved Spacetimes</title>
@@ -426,28 +465,6 @@ My two cents.
         <category>optics</category>
         
         <category>rpi</category>
-        
-      </item>
-    
-      <item>
-        <title>3 body Simulation using FPGA</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We were supposed to make something using Terasic DE0-Nano boards equipped with Altera Cyclone IV E FPGA as a part of our course project in Digital Electronics Lab(EP 230). We went around to explore what are some things which an FPGA can do better than a CPU. Starting with High Frequency Trading and Bitcoin computation, we evolved our idea into N body simulation which we could complete for 3 body simulation. &lt;/p&gt;
-&lt;p&gt;The general idea is easy to grasp. Consider that you are simply calculating the vector r&lt;sub&gt;j&lt;/sub&gt; - r&lt;sub&gt;i&lt;/sub&gt;. This requires 3 subtractions which a simple CPU will serially do, but on an FPGA we can program three subtractors to work in parallel. The improvement in speed is challenged by a requirement of larger hardware(Flops per unit area), but hardware is cheap and time is not, thus FPGAs seek good applications in high performance computing till date.&lt;/p&gt;
-&lt;p&gt;The full abstract can be downloaded &lt;a href=&quot;/media/fpga_doc.pdf&quot;&gt;here&lt;/a&gt;, and the presentation is available at &lt;a href=&quot;https://docs.google.com/presentation/d/1tZKQbFShL-eHozx8fI_xyVnHJPRaeSnEXDdIa1Blzi0/edit?usp=sharing&quot;&gt;this&lt;/a&gt; drive link.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 14 Apr 2016 00:42:04 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/digital-systems/coding/computational/2016/04/14/3-body-simulation-fpga/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>digital-systems</category>
-        
-        <category>coding</category>
-        
-        <category>computational</category>
         
       </item>
     
