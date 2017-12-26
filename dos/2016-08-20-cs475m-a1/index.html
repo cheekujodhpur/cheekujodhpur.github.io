@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CS475m Assignment 1 Report</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage">
+    <link rel="canonical" href="http://localhost:4000/dos/2016-08-20-cs475m-a1/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+                tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+    </script>
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+    <div class="header-wrap">
+        <img class="site-title" src="/img/profile.jpg" height="50px" style="margin-right:10px;">
+        <a class="site-title" href="/"><font style="color:grey">kumar</font>AYUSH</a>
+        <ul class="site-nav">
+            
+                <li><a class="page-link" href="/">About.</a></li>
+            
+                <li><a class="page-link" href="/75dos/">75DOS.</a></li>
+            
+                
+            
+                
+            
+                <li><a class="page-link" href="/projects/">Projects.</a></li>
+            
+                <li><a class="page-link" href="/talks/">Talks.</a></li>
+            
+            <li><a class="page-link" href="/media/cv.pdf">CV.<a/></li>
+        </ul>
+    </div>
+</header>
+
+
+    <div class="document">
+        <div class="post">
+
+  <header class="post-header">
+    <h1>CS475m Assignment 1 Report</h1>
+  </header>
+
+  <article class="post-content">
+  <p><a></a></p>
+<p><i>This was a group assignment and the report represents joint efforts of <br /><b>Keshav Srinivasan</b> (140260001) and <b>Kumar Ayush</b> (140260016)</i></p>
+<p>This report is structured as follows. Section A summarises a comparison between the features our program has and what the specifications demanded. Section B describes the timeline of our project, highlighting certain decisions we took and the implications they had. Section C describes known bugs. Section D is a concluding note. We end with citing our sources, and an appendix of exemplar screenshots.</p>
+<h3>A. Are the specs met?</h3>
+<ul>
+  <li>The color_t, pen_t, fill_t, point_t and line_t classes are implemented as described.</li>
+  <li>Our triangle_t class does not store the color of the border. The triangle is drawn with the current pen color.</li>
+  <li>The drawing_t class is implemented as described.</li>
+  <li>The canvas_t class is implemented as described, except we have a 1D array, which represents the squashed 2D array of pixels since glDrawPixels requires a pointer to a 1D array. This seemed easier to do.</li>
+  <li>We save and load as described</li>
+  <li>We have a concept of <i>drawing</i> points as well.</li>
+  <li>While drawing lines and triangles, we interpret <i>successively</i> clicked vertices as having a desire to draw a series of lines and triangles i.e. clicking a third point while in line mode will draw another line between the second and third point.</li>
+  <li>Right-click takes back the last point clicked, not only in line and triangle mode, but works as 'Undo' for all actions in the program except clear.</li>
+  <li>Our fill is a toggle, a mode of its own. You can keep clicking once in fill mode and it fills the respective quad.</li>
+  <li>We have an eraser mode on pressing 'E'. This is a toggle mode.</li>
+  <li>The co-ordinate system in my pixel array was set to (0,0) at top-left corner while the mouse() function returned co-ordinates with (0,0) at bottom-left corner. We made an explicit conversion while mutating pixels.</li>
+</ul>
+<h3>B. The Story</h3>
+<ul>
+  <li>Skeletal structure of all classes is written.</li>
+  <li>We now have to implement the draw method for the point. We have an argument if we should draw a point or not, and if we do, should we do it with a width? A circular width or a square width? For ease of implementation, we settled for a square width, but there is an ambiguity here. If the pen width is an odd number, we can get away with drawing a square around the clicked point. But for an even width, the clicked point will lie asymmetrically within the drawn square. We eventually settled that this bias is OK since the maximum error we have is of one pixel.</li>
+  <li>The Bresenham algorithm is a bit complicated for drawing a line with thickness. But since we were drawing our points with a thickness, this allowed us to get away with implementing the Bresenham for 1-pixel thickness. This is less efficient, but works <i>beautifully</i>.</li>
+  <li>Drawing triangles was a trivial step, so was floodfill.</li>
+  <li>Our next hurdle was wrapping our head around the idea that canvas_t has an object of type drawing_t but drawing_t requires canvas_t to mutate the pixel array contained by it. There was a circular dependency arising. We discovered the concept of forward declarations in C++ and this was hence resolved.</li>
+  <li>To maintain a vector of all drawn objects, we defined another class shape_t which is generic to all the other classes that can be drawn. Save and Load was a trivial step, once we had defined shape_t well enough.</li>
+  <li>The next challenge was to implement Undo, we needed a temporary pixel buffer. But for all practical purposes, we got away with a trick. We popped the last inserted object from our vector of all objects, then we saved it to a temporary file and loaded it. For <i>less enough</i> objects on the screen, this process was instantaneous.</li>
+</ul>
+<h3>C. All's Not Well</h3>
+<ul>
+  <li>You cannot undo consecutive fill actions, hangs the program indefinitely.</li>
+  <li>Any invalid input while entering colors and widths hangs the program indefinitely.</li>
+  <li>If we have a window size larger than the screen, the co-ordinate reported by the mouse is offset by the amount the window is clipped out of the screen, resulting in incomprehensible behaviour often.</li>
+</ul>
+<h3>D. Thank You</h3>
+<p>We really had a lot of fun doing this assignment, and learnt a lot more about C++ as well, along with reinforcing the graphics concepts learnt in classroom.<br />
+Time spent coding: ~12 hours <br />
+Time spent drawing: ~6 hours <br /></p>
+<h3>References</h3>
+<ul>
+ <li>Used default parameter values in declaration of method rather than definiton following <a target="_blank" href="http://stackoverflow.com/a/4989505/1928133">this</a></li>
+ <li>Usage of glDrawPixels and the method to store array in canvas_t inspired from <a target="_blank" href="http://www.cs.mun.ca/~blangdon/opengl/glDrawPixels.html">here</a></li>
+ <li>Bresenham Line implementation taken from the course's tutorials.</li>
+</ul>
+
+<h3>Appendix</h3>
+<p><img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/points.png" /><br />
+<span style="font-size:16px;">Fig 1. Points</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/lines.png" /><br />
+<span style="font-size:16px;">Fig 2. Lines</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/triangles.png" /><br />
+<span style="font-size:16px;">Fig 3. Triangles</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/fill.png" /><br />
+<span style="font-size:16px;">Fig 4. Fill</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/undo.png" /><br />
+<span style="font-size:16px;">Fig 5. Undo, the fill from previous image were removed by undo</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/eraser.png" /><br />
+<span style="font-size:16px;">Fig 6. Eraser</span><br /></p>
+<p>
+We had to make an image of an indoor scene to finish the assignment. Here's that for you
+</p>
+<p><img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/original.jpg" /><br />
+<span style="font-size:16px;">Fig 7. Original Shot</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/step1.png" /><br />
+<span style="font-size:16px;">Fig 8. Step 1</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/step2.png" /><br />
+<span style="font-size:16px;">Fig 9. Step 2</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/step3.png" /><br />
+<span style="font-size:16px;">Fig 10. Step 3</span><br />
+<img alt="points" style="width:500px;border:solid 1px black;" src="/media/cs475ma1/final.png" /><br />
+<span style="font-size:16px;">Fig 11. Final Image</span><br /></p>
+
+<p>end</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="footer-col-1 column">
+      <ul>
+        <li>Kumar Ayush</li>
+        <li>cheekujodhpur</li>
+      </ul>
+    </div>
+    <div class="footer-col-2 column">
+        Room No. 214, Hostel-4<br />
+        Indian Institue of Techonology, Bombay
+        Mumbai-400076, India
+    </div>
+    <div class="footer-col-3 column">
+        <ul>
+            <li><a href="mailto:cheekujodhpur@gmail.com">cheekujodhpur@gmail.com</a></li>
+            <li><a href="mailto:kumar.ayush@iitb.ac.in">kumar.ayush@iitb.ac.in</a></li>
+        </ul>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    </body>
+</html>

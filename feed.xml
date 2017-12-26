@@ -3,470 +3,97 @@
   <channel>
     <title>Kumar Ayush</title>
     <description>I am Kumar Ayush, an Engineering Physics sophomore at Indian Institute of Technology, Bombay. I love to cook, travel, socialize and tap into physical sciences. My mood is usually a superposition of psychopath, mad hatter, party animal and curious being and may collapse into any of these when you meet me. This is my personal homepage</description>
-    <link>http://cheekujodhpur.github.io/</link>
-    <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Nov 2016 11:02:59 +0530</pubDate>
-    <lastBuildDate>Wed, 23 Nov 2016 11:02:59 +0530</lastBuildDate>
-    <generator>Jekyll v2.2.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 25 Dec 2017 12:02:18 +0530</pubDate>
+    <lastBuildDate>Mon, 25 Dec 2017 12:02:18 +0530</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>Lenovo Game Jam: Soraka&#39;s Revenge</title>
+        <title>A black hole through the looking glass: Part 3</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Sometime in the Fall of 2015, me and three of my friends (Keshav Srinivasan, Mikail Khona, Anuj Shetty) participated in a GameJam by Lenovo. We had to make a game from scratch in 72 hours. None of us had any experience in gaming whatsoever before this. (n00bs) I will partially describe the techincal details, while you enjoy the screenshots from the game below.&lt;/p&gt;
-&lt;p&gt;The theme given to us was &lt;i&gt;Tower Defense&lt;/i&gt;, and we ended up making a Plants vs Zombies kind of setup, but with vampires and monsters, and warriors defending a castle. We used Unity Personal Edition to make this game, and used characters and sound effectsfrom free resources all over the internet, and used music from the Witcher 3. This kind of plagiarism is what happens when you don&#39;t have time to be artistic, yet want high poly characters in the game. We got a penalty for this and got an honorable mention prize. But the following are the key new concepts we learnt: &lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Collision boxes: I had known about them just by playing games, but the importance of specifying them properly based on utility and character sizes became relevant only after doing this project.&lt;/li&gt;
-    &lt;li&gt;Animation State Diagrams: I had never imagined that the concepts on finite state diagrams that we learnt in our Digital Systems would be so elegantly useful here&lt;/li&gt;
-    &lt;li&gt;Particle Effects: It was not obvious that their animation procedure will have to be so different than character animation. We&#39;ve used this on our cannons fired from the castle.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;After I am able to imitate the smallpt output using ray integration, the only modification to produce a black hole is changing the integration equations. I start with the Schwarschild metric in isotropic co-ordinates and follow the methods described in &lt;a target=&quot;_blank&quot; href=&quot;https://arxiv.org/abs/1502.03809&quot;&gt;Interstellar paper&lt;/a&gt;, to get the desired output. I sure had to tweak a bit with the scene to fit the black hole in the center of the room, as I had promised earlier. Follows an image of how a blackhole with Schwarschild radius of 5 units would look, before I explain a few assumptions that I made&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;artistic&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/artistic.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Black Hole of Schwarschild Radius 5 units at center&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Screenshot Time!&lt;/p&gt;
+&lt;p&gt;As a bonus, here is an einstein ring with just the hole and a light source behind it&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;einstein&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/einstein_ring.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. Einstein ring&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Screenshots&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_1.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;This is the loading screen. This is a map of our world, and three levels indicated by pointers. They aren’t very different maps, just the type of monsters is a bit different&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_2.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Vampires are coming. You need to put fantasy warriors on the map ahead of them to stop them. On the top right, the first number you see is the coin you have, and it takes about 25 to spawn one. The second and third numbers are the wave number and score, separated by a colon.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_3.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Surprise! Yep, there is a dragon.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/sorakarevenge/image_4.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Dragon is the last enemy in the last wave. You kill it, you win. Simple game, simple life.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can try out the game &lt;a href=&quot;https://drive.google.com/drive/folders/0B1OWcwK4S40-OV9zY2NMWTZIOWs?usp=sharing&quot;&gt;here&lt;/a&gt;. You need the &lt;i&gt;Soraka Revenge&#39;s Data&lt;/i&gt; folder along with the .exe to run it. You should also watch the introduction videos in the link above.&lt;/p&gt;
+&lt;p&gt;That's all folks! I'll probably do the explaining later&lt;/p&gt;
 </description>
-        <pubDate>Wed, 23 Nov 2016 15:46:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/gamejam/dev/2016/11/23/sorakas-revenge/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/gamejam/dev/2016/11/23/sorakas-revenge/</guid>
+        <pubDate>Wed, 05 Oct 2016 22:04:00 +0530</pubDate>
+        <link>http://localhost:4000/75dos/relativity/graphics/2016/10/05/grsmallpt-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/75dos/relativity/graphics/2016/10/05/grsmallpt-3/</guid>
         
         
         <category>75dos</category>
-        
-        <category>gamejam</category>
-        
-        <category>dev</category>
-        
-      </item>
-    
-      <item>
-        <title>CS490 RnD Post: Ray tracing in Curved Spacetimes</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-Black holes have imbibed a sense of wonder in almost every science enthusiast. We look at the problem of visualizing the space time around a black hole. Inside the horizon of a black hole, no matter or radiation escapes, but in close proximity of the horizon, the space time is curved which creates interesting visual phenomenon, as popularized in the movie &lt;i&gt;Interstellar&lt;/i&gt;. We try to solve the problem of visualizing a curved space time on macroscopic scale. For instance, how would it look if some mystic force created a black hole right next to your laptop? It may be too small to suck your laptop in, thankfully, but might give result to interesting visual effects around it. 
-&lt;/p&gt;
-&lt;p&gt;
-We solve the above stated rendering problem using ray tracing. In conventional ray tracing, the straight line path of a light ray is a fundamental assumption, which breaks down in our case. Thus, we need to numerically integrate the path of the rays backwards from the camera, and detect its intersections with the geometry in our scene. We use OpenMP to accelerate performance on CPU, and an OpenCL import of the same code for GPU processing. As compared to a 14 core (28 virtual) Intel Xeon, the Nvidia Quadro M4000 GPU gives a 2x speedup to us. Learning GPU acceleration was a vital aim of the project.
-&lt;/p&gt;
-
-&lt;h3&gt;Results&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig7_myring.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. There is a light source behind the black hole. Although there are no light rays reaching directly at us, they can curve around the black hole and reach the camera, forming what is known as an Einstein Ring&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig6_acc.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. This is a rectangular torus, modelling an accretion disk around a black hole. There is a texture mapped onto its surface, which was the image of an arbitrary star field&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig9_artistic.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 3. This is the image of a black hole put right in the center of the Cornell Room.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Below is a GIF of the black hole growing inside the room. For certain sizes, you can see multiple rings, which is a geometric result&lt;/p&gt;
-
-&lt;blockquote class=&quot;imgur-embed-pub&quot; lang=&quot;en&quot; data-id=&quot;a/rDada&quot;&gt;&lt;a href=&quot;//imgur.com/rDada&quot;&gt;What if I put a Black Hole in a Box?&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;//s.imgur.com/min/embed.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs490/fig10_glassbh.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 4. This is the black hole put inside the glass sphere&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Note a video below where the black hole inside the glass sphere grows in size&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Reyb7ZIphgU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;You can see the full report &lt;a href=&quot;/media/cs490_report.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Nov 2016 18:51:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/rnd/graphics/relativity/2016/11/22/cs490/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/rnd/graphics/relativity/2016/11/22/cs490/</guid>
-        
-        
-        <category>75dos</category>
-        
-        <category>rnd</category>
-        
-        <category>graphics</category>
         
         <category>relativity</category>
         
+        <category>graphics</category>
+        
       </item>
     
       <item>
-        <title>CS475m Assignment 3 Report</title>
+        <title>A black hole through the looking glass: Part 2</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;This was a group assignment and the report represents joint efforts of &lt;br /&gt;&lt;b&gt;Keshav Srinivasan&lt;/b&gt; (140260001) and &lt;b&gt;Kumar Ayush&lt;/b&gt; (140260016)&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;This report describes the key features of our implementation of the descirbed features&lt;/p&gt;
-&lt;h3&gt;The textures&lt;/h3&gt;
-&lt;p&gt;We have used the code sent by the Course Instructor to load a texture in OpenGL and simply used TexCoord2d to specify texture co-ordinates before every point in our construction. There is a wooden texture for the floor, rough plaster for walls and roof, and an arbitrary color texture applied to the bicycle frame. The tires also have a texture. The only challenge here was figuring out the co-ordinates as we had not used glut functions to draw cylinders and torii but constructed them using triangle strips from scratch in the previous part&lt;/p&gt;
+&lt;p&gt;Now I am doing my first formal Graphics course right now. I have ideas about the basic jargon because I spent a week trying to learn DirectX back in school. But ray tracing was definitely something new. In my opinion, any one who has thought a lot about it would gain an intuitive idea about ray tracing, because it's exactly what it says it is. To formally get started with it, I read a book called &lt;i&gt;Introduction to Ray Tracing&lt;/i&gt; by Andrew S. Glassner.&lt;/p&gt;
 
-&lt;h3&gt;The Lights&lt;/h3&gt;
-&lt;p&gt;There are &lt;em&gt;three&lt;/em&gt; lights. LIGHT0 is just hovering midair in the room providing ambient lighting. LIGHT1 is lighting on the wall which can be turned on or off using &lt;i&gt;L&lt;/i&gt;. The third light LIGHT2 is the cycle&#39;s headlight, which is off by default but can be toggled with &lt;i&gt;H&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Along with this book, I studied the &lt;i&gt;smallpt&lt;/i&gt; &lt;a target=&quot;_blank&quot; href=&quot;http://www.kevinbeason.com/smallpt/&quot;&gt;code by Kevin Beason&lt;/a&gt;. This is pretty much codegolfing, because this boasts of being a 99 line cpp code for raytracing. My guide Prof. Parag Chaudhuri emphasized correctness before speed, and hence we concluded that if I achieve the image generated by smallpt using integration of the ray paths along straight lines, we can move on to curved spacetimes just by changing a small function somewhere in the code which controls the said integration. This took more time than expected. The following is the story of what I was doing and the outputs I got, accompanied by what I did to correct for it. Here is an image from smallpt which you can use for reference at every step I talk about below.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;original&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/result_200.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Original Result&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;The Cameras&lt;/h3&gt;
-&lt;p&gt;There is a casual side-view camera, which is set by default. There are three other cameras which can be toggled in and out. You have to come out of a camera mode before you enter another. &#39;1&#39; gives you the rider mode. We have made it such that it also rotates with the handle. &#39;2&#39; gives a Third Person view of the cycle which also moves with the cycle but does not rotate with the handle. &#39;3&#39; is just a camera on the wall, the creepy stalker watches everything from it.&lt;/p&gt;
+&lt;p&gt;I had &lt;i&gt;legendary&lt;/i&gt; ideas on how I can move my ray along 3d pixels, also called voxels by many. If the voxel I am in intersects with some sphere in the scene, I break down the current voxel in 8 smaller voxels and travel along them, repeating this until I am some epsilon away from the sphere. Of course when I say &lt;i&gt;legendary&lt;/i&gt; I mean stupid. Because here is what I got.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;voxel&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/voxel.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. My First Try&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Making the spotlight come to life&lt;/h3&gt;
-&lt;p&gt;We made our walls out of 100x100 rectangles, 2x100x100 triangles per wall in total to render a good spotlight with Gourad shading. This took more time than expected as we were stupid at one point to assign 1/2 to a float variable instead of 1/2.0; :P &lt;/p&gt;
+&lt;p&gt;It took me two weeks, which also involve my mid semester examinations to realize that the only thing that I needed to correct it is to get away with this voxel business. You see, the way I detected if the ray hits a sphere in a certain voxel or not was by advancing the ray to the next voxel and checking if the ray is in opposite sides (in or out) of the sphere in the two cases, for every sphere in the scene. Doing this by advancing a ray through quantized voxels was just adding to the inaccuracy. I simply use the position of the ray I get from the numerical integration function and I go ahead with it. Here is what I get.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;novoxel&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/novoxel.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 3. Correcting for voxel&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Known Problem&lt;/h3&gt;
-&lt;p&gt;Whenever we change camera, the headlight vanishes until you press any key.&lt;/p&gt;
+&lt;p&gt;At first glance, I was really happy at this point, but on a &lt;i&gt;closer&lt;/i&gt; inspection I realized that there is no refraction in my code. If you take a look at the original result at this point and you are more observant than I was for a while, you'll see that the sphere on the right is a refracting sphere where my code makes it reflective as well. Well, to be more technically precise, my code makes it specular reflective. Everything has some diffuse reflection anyways. It does not take more than an hour of walk around Hiranandani Gardens in Powai before I understand what's up, but I'll skip a week ahead when I finally have the image corected. The rays always stop a bit outside the sphere, but the resulting rays after refraction need to start a little inside. It was a different case with smallpt where you could reject one of the two solutions of the intersection solution but here I had to manually push the ray inside by as much as it is outside the sphere. Here is the output&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;refraction&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/refraction.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 4. Correcting for refraction&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Commands you should use while running the program&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Use &lt;i&gt;H&lt;/i&gt; for Headlight Toggle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;L&lt;/i&gt; for Tubelight Toggle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;left&lt;/i&gt; and &lt;i&gt;right&lt;/i&gt; for rotating the handle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;up&lt;/i&gt; and &lt;i&gt;down&lt;/i&gt; arrow keys to move the cycle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;1&lt;/i&gt; for Rider Cam toggle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;2&lt;/i&gt; for Third Person toggle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;3&lt;/i&gt; for Wall Cam toggle&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;It looks very similar to the original result I know, but at this point you need to stop trying to be ultra observant with human eyes and rely on taking a diff of the two images to notice that there is a dark patch around the equator of the second sphere in my output which should not exist. Now I'll jump straight to how to correct it, without trying to explain why it works, because I know I'll fail at that. The epsilon within which I detect that the ray hits the sphere was set at the machine epsilon for double in cpp. I reduced it to five orders of magnitude higher than that and the following is the output I got.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;final&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/grsmallpt/final.png&quot; /&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 5. The correct output?&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Some Images&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&quot;casual&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma3/normal.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Room Casual&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;dark&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma3/dark.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. Room Dark, Headlight On&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;motion&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma3/motion.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 3. In Motion&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Yippee!&lt;/p&gt;
 </description>
-        <pubDate>Sat, 15 Oct 2016 03:02:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/10/15/cs475m-a3/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/10/15/cs475m-a3/</guid>
+        <pubDate>Sat, 24 Sep 2016 22:20:00 +0530</pubDate>
+        <link>http://localhost:4000/75dos/relativity/graphics/2016/09/24/grsmallpt-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/75dos/relativity/graphics/2016/09/24/grsmallpt-2/</guid>
         
         
         <category>75dos</category>
         
-        <category>assignment</category>
+        <category>relativity</category>
         
         <category>graphics</category>
         
       </item>
     
       <item>
-        <title>CS475m Assignment 2 Report</title>
+        <title>A black hole through the looking glass: Part 1</title>
         <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;This was a group assignment and the report represents joint efforts of &lt;br /&gt;&lt;b&gt;Keshav Srinivasan&lt;/b&gt; (140260001) and &lt;b&gt;Kumar Ayush&lt;/b&gt; (140260016)&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;This report describes the hierarchical structure of the bicycle and contains some images from different viewpoints.&lt;/p&gt;
-&lt;h3&gt;The hierarchical Structure&lt;/h3&gt;
-&lt;pre&gt;
-- Frame -
-        |
-        - Back Wheel -
-                     |
-                     - Back Gear
-        - Seat
-        - Handle Rod - 
-                     |
-                     - Front Wheel
-                     - Handle
-        - Pedal Shaft -
-                      |
-                      - Pedals
-                      - Front Gear
-        - Gear Chain
-&lt;/pre&gt;
-
-&lt;h3&gt;Commands you should use while running the program&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Use &lt;i&gt;k&lt;/i&gt; for Side View Toggle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;v&lt;/i&gt; for Top View Toggle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;h&lt;/i&gt; and &lt;i&gt;H&lt;/i&gt; for decreasing and increasing seat height respectively&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;left&lt;/i&gt; and &lt;i&gt;right&lt;/i&gt; arrow keys to move front wheel&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;top&lt;/i&gt; and &lt;i&gt;bottom&lt;/i&gt; arrow keys to move back wheel&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;PgUp&lt;/i&gt; and &lt;i&gt;PgDown&lt;/i&gt; arrow keys to rotate handle&lt;/li&gt;
-    &lt;li&gt;Use &lt;i&gt;x&lt;/i&gt; and &lt;i&gt;X&lt;/i&gt; to rotate pedals&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Model Images&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&quot;front&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma2/front.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Cycle Front View&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;isometric&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma2/isometric.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. Isometric View&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;I assume you have seen &lt;i&gt;Interstellar&lt;/i&gt;, the famed Nolan movie. Now having a black hole in the scene brings a natural question &quot;How does a black hole look?&quot; Well, a dark patch on the sky simply models the black hole, or more precisely, everything inside the Schwarschild radius of the BH. A more interesting question, then is to ask &quot;How do things look around a black hole?&quot; Even a law major would've come across enough popular science to know that light bends around a black hole. If you stretch your imagination, you can see objects getting distorted and being able to see things not in direct line of vision.&lt;/p&gt;
+&lt;p&gt;If you want to be a bit accurate about all this and generate a CGI of how it'll really look, &lt;a target=&quot;_blank&quot; href=&quot;https://arxiv.org/abs/1502.03809&quot;&gt;this (arXiv 1502.03609)&lt;/a&gt; is what was done for Interstellar. They describe it well enough that any one with a fair amount of knowledge of coding can try it out at home, and in fact explicitly encourage this for students.&lt;/p&gt;
+&lt;p&gt;If you Google &lt;i&gt;black hole raytracing&lt;/i&gt; or something similar, then you get a beautiful &lt;a target=&quot;_blank&quot; href=&quot;http://rantonels.github.io/starless/&quot;&gt;code&lt;/a&gt;. Frankly, I did not feel very good at seeing this. This does almost everything that I wanted to do, until I realized something about this and the other Relativistic Ray Tracing codes written for astrophysical research. They solve some metrics in some situations, and only take into account specific scattering models which do not help if I want to look at the situation out of an astrophysical scenario.&lt;/p&gt;
+&lt;p&gt;I am sure I'd have left you pondering about what do I really want to do then over the last few sentences. I'll be exemplar in requesting you to imagine how would your face look if we're sitting across a table and there is a blackhole hovering between us. Yes, this probably does not have direct value to astroph research, but when you think about it, our faces can easily be replaced by accretion disks and the scattering model of reflection/refraction which is used in such scenarios can be replaced with an astrophysically relevant scattering model.&lt;/p&gt;
+&lt;p&gt;And hence begins the journey of trying to see how would a black hole look if it were kept in your room.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 01 Oct 2016 03:51:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/10/01/cs475m-a2/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/10/01/cs475m-a2/</guid>
+        <pubDate>Fri, 23 Sep 2016 04:46:00 +0530</pubDate>
+        <link>http://localhost:4000/75dos/relativity/graphics/2016/09/23/grsmallpt-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/75dos/relativity/graphics/2016/09/23/grsmallpt-1/</guid>
         
         
         <category>75dos</category>
         
-        <category>assignment</category>
+        <category>relativity</category>
         
         <category>graphics</category>
-        
-      </item>
-    
-      <item>
-        <title>CS475m Assignment 1 Report</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;This was a group assignment and the report represents joint efforts of &lt;br /&gt;&lt;b&gt;Keshav Srinivasan&lt;/b&gt; (140260001) and &lt;b&gt;Kumar Ayush&lt;/b&gt; (140260016)&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;This report is structured as follows. Section A summarises a comparison between the features our program has and what the specifications demanded. Section B describes the timeline of our project, highlighting certain decisions we took and the implications they had. Section C describes known bugs. Section D is a concluding note. We end with citing our sources, and an appendix of exemplar screenshots.&lt;/p&gt;
-&lt;h3&gt;A. Are the specs met?&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;The color_t, pen_t, fill_t, point_t and line_t classes are implemented as described.&lt;/li&gt;
-  &lt;li&gt;Our triangle_t class does not store the color of the border. The triangle is drawn with the current pen color.&lt;/li&gt;
-  &lt;li&gt;The drawing_t class is implemented as described.&lt;/li&gt;
-  &lt;li&gt;The canvas_t class is implemented as described, except we have a 1D array, which represents the squashed 2D array of pixels since glDrawPixels requires a pointer to a 1D array. This seemed easier to do.&lt;/li&gt;
-  &lt;li&gt;We save and load as described&lt;/li&gt;
-  &lt;li&gt;We have a concept of &lt;i&gt;drawing&lt;/i&gt; points as well.&lt;/li&gt;
-  &lt;li&gt;While drawing lines and triangles, we interpret &lt;i&gt;successively&lt;/i&gt; clicked vertices as having a desire to draw a series of lines and triangles i.e. clicking a third point while in line mode will draw another line between the second and third point.&lt;/li&gt;
-  &lt;li&gt;Right-click takes back the last point clicked, not only in line and triangle mode, but works as &#39;Undo&#39; for all actions in the program except clear.&lt;/li&gt;
-  &lt;li&gt;Our fill is a toggle, a mode of its own. You can keep clicking once in fill mode and it fills the respective quad.&lt;/li&gt;
-  &lt;li&gt;We have an eraser mode on pressing &#39;E&#39;. This is a toggle mode.&lt;/li&gt;
-  &lt;li&gt;The co-ordinate system in my pixel array was set to (0,0) at top-left corner while the mouse() function returned co-ordinates with (0,0) at bottom-left corner. We made an explicit conversion while mutating pixels.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;B. The Story&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Skeletal structure of all classes is written.&lt;/li&gt;
-  &lt;li&gt;We now have to implement the draw method for the point. We have an argument if we should draw a point or not, and if we do, should we do it with a width? A circular width or a square width? For ease of implementation, we settled for a square width, but there is an ambiguity here. If the pen width is an odd number, we can get away with drawing a square around the clicked point. But for an even width, the clicked point will lie asymmetrically within the drawn square. We eventually settled that this bias is OK since the maximum error we have is of one pixel.&lt;/li&gt;
-  &lt;li&gt;The Bresenham algorithm is a bit complicated for drawing a line with thickness. But since we were drawing our points with a thickness, this allowed us to get away with implementing the Bresenham for 1-pixel thickness. This is less efficient, but works &lt;i&gt;beautifully&lt;/i&gt;.&lt;/li&gt;
-  &lt;li&gt;Drawing triangles was a trivial step, so was floodfill.&lt;/li&gt;
-  &lt;li&gt;Our next hurdle was wrapping our head around the idea that canvas_t has an object of type drawing_t but drawing_t requires canvas_t to mutate the pixel array contained by it. There was a circular dependency arising. We discovered the concept of forward declarations in C++ and this was hence resolved.&lt;/li&gt;
-  &lt;li&gt;To maintain a vector of all drawn objects, we defined another class shape_t which is generic to all the other classes that can be drawn. Save and Load was a trivial step, once we had defined shape_t well enough.&lt;/li&gt;
-  &lt;li&gt;The next challenge was to implement Undo, we needed a temporary pixel buffer. But for all practical purposes, we got away with a trick. We popped the last inserted object from our vector of all objects, then we saved it to a temporary file and loaded it. For &lt;i&gt;less enough&lt;/i&gt; objects on the screen, this process was instantaneous.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;C. All&#39;s Not Well&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;You cannot undo consecutive fill actions, hangs the program indefinitely.&lt;/li&gt;
-  &lt;li&gt;Any invalid input while entering colors and widths hangs the program indefinitely.&lt;/li&gt;
-  &lt;li&gt;If we have a window size larger than the screen, the co-ordinate reported by the mouse is offset by the amount the window is clipped out of the screen, resulting in incomprehensible behaviour often.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;D. Thank You&lt;/h3&gt;
-&lt;p&gt;We really had a lot of fun doing this assignment, and learnt a lot more about C++ as well, along with reinforcing the graphics concepts learnt in classroom.&lt;br /&gt;
-Time spent coding: ~12 hours &lt;br /&gt;
-Time spent drawing: ~6 hours &lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;Used default parameter values in declaration of method rather than definiton following &lt;a target=&quot;_blank&quot; href=&quot;http://stackoverflow.com/a/4989505/1928133&quot;&gt;this&lt;/a&gt;&lt;/li&gt;
- &lt;li&gt;Usage of glDrawPixels and the method to store array in canvas_t inspired from &lt;a target=&quot;_blank&quot; href=&quot;http://www.cs.mun.ca/~blangdon/opengl/glDrawPixels.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
- &lt;li&gt;Bresenham Line implementation taken from the course&#39;s tutorials.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Appendix&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/points.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 1. Points&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/lines.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 2. Lines&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/triangles.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 3. Triangles&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/fill.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 4. Fill&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/undo.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 5. Undo, the fill from previous image were removed by undo&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/eraser.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 6. Eraser&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;
-We had to make an image of an indoor scene to finish the assignment. Here&#39;s that for you
-&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/original.jpg&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 7. Original Shot&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/step1.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 8. Step 1&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/step2.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 9. Step 2&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/step3.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 10. Step 3&lt;/span&gt;&lt;br /&gt;
-&lt;img alt=&quot;points&quot; style=&quot;width:500px;border:solid 1px black;&quot; src=&quot;/media/cs475ma1/final.png&quot; /&gt;&lt;br /&gt;
-&lt;span style=&quot;font-size:16px;&quot;&gt;Fig 11. Final Image&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;end&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Aug 2016 19:52:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/08/20/cs475m-a1/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/assignment/graphics/2016/08/20/cs475m-a1/</guid>
-        
-        
-        <category>75dos</category>
-        
-        <category>assignment</category>
-        
-        <category>graphics</category>
-        
-      </item>
-    
-      <item>
-        <title>Witcher, Game of Thrones and Predestination: Inspirations from Irish Mythology</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-I was home for the past one week, having a compulsory vacation enforced by my family. I spent it reading the Witcher series. To those of you who don&#39;t know about them, &lt;a target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Andrzej_Sapkowski#The_Witcher_Saga&quot;&gt;The Witcher&lt;/a&gt; is a polish fantasy series by Andrzej Sapkowski. In the opinion of many, what makes them distinctive from fantasy series like LOTR and Harry Potter are the grey shades of morality portrayed in the world. In LOTR and HP, there is a good and there is an evil and at the end of the day, the good has to triumph over evil. In Witcher, every decision taken has varying consequences for different characters; good and bad. This fascinates the eye, because of its &lt;i&gt;natural&lt;/i&gt; appeal.
-&lt;/p&gt;
-&lt;p&gt;
-Game of Thrones, the popular TV series, is the second thing that comes to my mind when you think of a grey portrayal of the world. I have not read the ASOIF books, but I am an avid follower of the show and hence believe I have an idea of the major keypoints of the show. And what I&#39;ll be talking about here are the striking similarities on some of the plotlines of Witcher and Game of Thrones. Some of them are built out of fan theories I read about GoT as well.
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Political and sexual intrigue, although since Witcher centers around one individual and his destiny, the political aspects are perhaps not as elaborate as GoT.&lt;/li&gt;
-&lt;li&gt;Witcher has an elven race &lt;i&gt;Aen Sidhe&lt;/i&gt;, and GoT&#39;s white walkers are like &lt;i&gt;sidhe&lt;/i&gt; made of ice, both derived from Ao Si in Irish mythology. We also know that Children of the Forest made White Walkers so they represent &lt;i&gt;Aen Sidhe&lt;/i&gt; better, and then they have a sister race called &lt;i&gt;Aen Elle&lt;/i&gt; which looks like a representation of the Others in Irish mythology, and of WW in GoT. Witcher&#39;s &lt;i&gt;Aen Elle&lt;/i&gt; have their own version of rogue riders called the Wild Hunt.&lt;/li&gt;
-&lt;li&gt;A major problem which surrounds the world as per a prophecy is the coming of a great winter; a great iceage, the Big Winter, the Big Chill, Aep Deireadh and many other names used for a long iceage. Witcher brings in a bit of science too by discussing that this will be effectively due to a change in tilt of Earth&#39;s axis.&lt;/li&gt;
-&lt;li&gt;Both of them have a central character who can travel through Space and Time. This is Witcher&#39;s Cirilla or Ciri, and GoT&#39;s Brandon Stark. Although, in the case of GoT, it is only fan theories which talk about a predestination. Witcher, on the other hand, is very explicit to center the story around Ciri&#39;s predestination.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-I spent long hours searching for popular Irish mythological stories so we could establish a connection. Witcher was published before ASOIF and ASOIF was published by the time Witcher was well known to the English speaking world. These are just my reflections.
-&lt;/p&gt;
-</description>
-        <pubDate>Sat, 18 Jun 2016 12:56:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/literature/pop/2016/06/18/on-irish-mytho/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/literature/pop/2016/06/18/on-irish-mytho/</guid>
-        
-        
-        <category>75dos</category>
-        
-        <category>literature</category>
-        
-        <category>pop</category>
-        
-      </item>
-    
-      <item>
-        <title>On Slicing Python Lists</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-A lot many are familiar with Python lists and the feature of slicing, although I find the description that most tutorials not intuitive enough. Here is how it goes.&lt;br /&gt;
-Let us start with defining an array of 10 elements
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a = [i for i in range(10)]
-&lt;/pre&gt;
-&lt;p&gt;
-Now, the following I assume you&#39;re familiar with.
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a[3:6]
-[3, 4, 5]
-&lt;/pre&gt;
-&lt;p&gt;
-And the way people think about it is selecting elements starting with &lt;i&gt;index 3&lt;/i&gt; till and including the element with &lt;i&gt;index 6-1=5.&lt;/i&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Do you digest that? I cannot. Why do I include the first index while not the second one? If I think in terms of indices, I have to spend my brain power in subtracting the second index by one, and I tell you I am very lazy about that. 
-&lt;br /&gt;
-Then there are people who say that you start with &lt;i&gt;index 3&lt;/i&gt; and choose &lt;i&gt;6-3=3&lt;/i&gt; elements there on. This does work because we see the following happening.
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a[4:4]
-[]
-&lt;/pre&gt;
-&lt;p&gt;
-But I do not understand that if I were inventing slicing, and I would want people to think in terms of an index and a length, why would I not just keep length as the second parameter? In this &lt;b&gt;hypothetical&lt;/b&gt; situation,
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a[3:3]
-[3, 4, 5]
-&lt;/pre&gt;
-&lt;p&gt;
-&lt;i&gt;DISCLAIMER: I do not claimer that this is how it went but I&#39;ll now talk about how I like to look at slicing&lt;/i&gt;
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a[3:]
-[3, 4, 5, 6, 7, 8, 9]
-&lt;/pre&gt;
-&lt;p&gt;
-I like to say that doing this &lt;i&gt;skips&lt;/i&gt; the first &lt;i&gt;three&lt;/i&gt; elements and gives the rest.
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a[:6]
-[0, 1, 2, 3, 4, 5]
-&lt;/pre&gt;
-&lt;p&gt;
-And this picks the first &lt;i&gt;six&lt;/i&gt; elements. Simple really!
-&lt;/p&gt;
-&lt;pre&gt;
-&amp;gt;&amp;gt;&amp;gt; a[3:6]
-[3, 4, 5]
-&lt;/pre&gt;
-&lt;p&gt;
-This just gives the &lt;i&gt;intersection&lt;/i&gt; of the two.
-&lt;/p&gt;
-&lt;p&gt;
-My two cents.
-&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Jun 2016 02:21:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/python/programming/2016/06/03/on-splicing/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/python/programming/2016/06/03/on-splicing/</guid>
-        
-        
-        <category>75dos</category>
-        
-        <category>python</category>
-        
-        <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Circle enclosing N lattice points</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Did you know?&lt;br /&gt;For every natural number N, there exists a circle enclosing exactly N lattice points!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/26vUCSK9K5wTm5fwI/giphy.gif&quot; alt=&quot;gif demonstrating fact&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The above was posted on the Facebook group of Math n Physics Club of my institute. It triggered a discussion about the center of such a circle with one guy commenting without reason enough that it has to be an irrational point and any irrational point would do.
-&lt;/p&gt;
-&lt;p&gt;I found it interesting and thought over it while taking a shower. &lt;i&gt;If&lt;/i&gt; the center is at origin, then this is impossible. If you try to enclose a point at a distance $\sqrt{d^2}$, you will find that $d^2 = x^2 + y^2$ where you don&#39;t have a unique choice of $x$ and $y$.&lt;/p&gt;
-&lt;p&gt;Now note that if the center is a rational point, say $(\frac{a}{b},\frac{c}{d})$, then you can scale the space by $bd$, then the center lies at $(ad,bc)$ and then a simple translation will take you to origin and our hypothesis is reduced to the above case raising a contradiction against our assumption that the center is a rational point.&lt;/p&gt;
-&lt;p&gt;Thus, the center must be an irrational point. I do not know if any irrational point would do though.&lt;/p&gt;
-&lt;p&gt;My two cents!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 May 2016 20:01:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/misc/math/2016/05/14/n-points-in-circle/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/misc/math/2016/05/14/n-points-in-circle/</guid>
-        
-        
-        <category>75dos</category>
-        
-        <category>misc</category>
-        
-        <category>math</category>
-        
-      </item>
-    
-      <item>
-        <title>On DSLR-Description</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am in custody of the Canon EOS 700D camera owned by Krittika-Astronomy Club of IIT Bombay. I&#39;ve always been able to have the IQ level to snap a picture from the camera required at social gatherings but have never been able to make sense of all the variety of features that it brings. &lt;/p&gt;
-&lt;p&gt;I took an attempt to study the specifications of the camera and learn how to use it to get good pictures for specific situations&lt;/p&gt;
-&lt;p&gt;The documentation can be found &lt;a href=&quot;/media/75dos_dslr.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 03 May 2016 23:50:00 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/75dos/misc/skills/2016/05/03/on-dslr/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/75dos/misc/skills/2016/05/03/on-dslr/</guid>
-        
-        
-        <category>75dos</category>
-        
-        <category>misc</category>
-        
-        <category>skills</category>
-        
-      </item>
-    
-      <item>
-        <title>Webcam Spectrograph using RPi</title>
-        <description>&lt;p&gt;&lt;a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We made a webcam spectrograph using an optical CD as the diffraction grating as our course project for Waves, Oscillation and Optics (EP 226). As processing the camera images on a computer would be too boring, we used an RPi board with embedded camera which we happened to have. The RPi could process and transmit the data over WiFi enabling us to access the results from any computer, in principle. This made the spectrograph completely portable,&lt;/p&gt;
-&lt;p&gt;Our professor suggested many possible improvements onto this which would make it a cheap product for schools. They include distancing the grating from the camera and using a good grating rather than the CD which has curved grooves.&lt;/p&gt;
-&lt;p&gt;The presentation is available at &lt;a href=&quot;https://docs.google.com/presentation/d/1qCOpMDIkoW5DiRjUoKt6KazmboxlhlZCXlEeynKLJM0/edit?usp=sharing&quot;&gt;this&lt;/a&gt; drive link.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 15 Apr 2016 23:42:04 +0530</pubDate>
-        <link>http://cheekujodhpur.github.io/projects/optics/rpi/2016/04/15/webcam-spectrograph/</link>
-        <guid isPermaLink="true">http://cheekujodhpur.github.io/projects/optics/rpi/2016/04/15/webcam-spectrograph/</guid>
-        
-        
-        <category>projects</category>
-        
-        <category>optics</category>
-        
-        <category>rpi</category>
         
       </item>
     
