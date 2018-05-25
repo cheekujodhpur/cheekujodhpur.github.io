@@ -1499,6 +1499,10 @@ input[type="radio"] + label:before {
     top: 0.25em; }
   .image.left, .image.right {
     max-width: 40%; }
+    @media screen and (max-width: 980px) {
+      .image.left, .image.right {
+        max-width: 100% !important;
+        margin: 0 0 2em 0 !important; } }
     .image.left img, .image.right img {
       width: 100%; }
   .image.fit {

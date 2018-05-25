@@ -87,9 +87,13 @@
 
   <section class="wrapper style5">
     <div class="inner">
+        
+        <span class="image left"><img src="/media/spreadsheet.png" alt="" /></span>
+        
         <h2>Haskell versus Excel</h2>
         <h3>Spreadsheet Programming</h3>
         <p><em>11 April 2018</em></p>
+
         <p>While trying to make an extremely powerful electromagnet, I came across a spreadhseet which had calculations for the magnetic field produced based on the thickness of the wire, voltage available and radius of the solenoid. The calculation for optimal parameters gets complicated because you also have to think of heat generated which changes the resistance of the wire and perhaps a few other issues. The spreadsheet had all the calculations encoded and we just had to input some parameters and it would output the rest. It was very handy, but it struck me then, spreadsheets are just programs</p>
 <!--break-->
 <p>Some time later I came across this book called “<a href="www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371/">Exercises in Programming Styles</a>” by Cristina Vidiera which has a companion <a href="https://github.com/crista/exercises-in-programming-style">GH repo</a>. Style number 26 is called <em>spreadsheet</em> and she emphasises on how data oriented this style is. Her implementation uses lambda functions in python to apply an operation over a column and get the next. This made me wondering if spreadhseets are capable of implementing functional programming. I am afraid I do not know enough, at the time of this writing, to prove or disprove this claim in a mathematically rigorous fashion. However, I was able to implement all functionalities provided in the basic Haskell tutorial. Some things are easier to do on Spreadsheets than in Haskell and vice versa. I could not wrap my head around how monads can be written onto spreadsheets but then I think you don’t really need to for all practical purposes I can imagine.</p>

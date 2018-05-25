@@ -11,10 +11,10 @@
   <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ubisoft Gamejam - Kumar Ayush</title>
-  <meta name="description" content="About 20 students were selected to visit Ubisoft Pune office for a 24 hour gamejam. The theme was water, and we came up with a platformer game.I wrote the ga...">
+  <title>On Slicing Python Lists - Kumar Ayush</title>
+  <meta name="description" content="A lot many are familiar with Python lists and the feature of slicing, although I find the description that most tutorials not intuitive enough. Here is how i...">
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="canonical" href="http://localhost:4000/projects/ubisoft-gamejam.html">
+  <link rel="canonical" href="http://localhost:4000/bposts/splicing.html">
   <link rel="stylesheet" href="/css/main.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
@@ -88,16 +88,63 @@
   <section class="wrapper style5">
     <div class="inner">
         
-        <span class="image left"><img src="/media/torchman.png" alt="" /></span>
-        
-        <h2>Ubisoft Gamejam</h2>
-        <h3>Or a lesson for using game engines</h3>
-        <p><em>13 March 2017</em></p>
+        <h2>On Slicing Python Lists</h2>
+        <h3></h3>
+        <p><em>3 June 2016</em></p>
 
-        <p>About 20 students were selected to visit Ubisoft Pune office for a 24 hour gamejam. The theme was <i>water</i>, and we came up with a platformer game.</p>
-<!--break-->
-<p>I wrote the game engine in JavaScript from scratch and the artwork is originally created by <em>Bidish Ghosh</em> but this left us with little time to work on the game dynamics. There is not more to describe here but you can play the game <a href="/media/ubisoft-gamejam/">here</a>; lightweight and runs in almost any browser.</p>
-<p>Thanks to <em>Sarthak Khandelwal</em>, <em>Bidish Ghosh</em> and <em>Yashwardhan Didwania</em> for working with me on this project.</p>
+        <p>
+A lot many are familiar with Python lists and the feature of slicing, although I find the description that most tutorials not intuitive enough. Here is how it goes.<br />
+Let us start with defining an array of 10 elements
+</p>
+<pre><code>&gt;&gt;&gt; a = [i for i in range(10)]
+</code></pre>
+<p>
+Now, the following I assume you’re familiar with.
+</p>
+<pre><code> &gt;&gt;&gt; a[3:6]
+[3, 4, 5]
+</code></pre>
+<p>
+And the way people think about it is selecting elements starting with <i>index 3</i> till and including the element with <i>index 6-1=5.</i>
+</p>
+<p>
+Do you digest that? I cannot. Why do I include the first index while not the second one? If I think in terms of indices, I have to spend my brain power in subtracting the second index by one, and I tell you I am very lazy about that. 
+<br />
+Then there are people who say that you start with <i>index 3</i> and choose <i>6-3=3</i> elements there on. This does work because we see the following happening.
+</p>
+<pre><code> &gt;&gt;&gt; a[4:4]
+[]
+</code></pre>
+<p>
+But I do not understand that if I were inventing slicing, and I would want people to think in terms of an index and a length, why would I not just keep length as the second parameter? In this <b>hypothetical</b> situation,
+</p>
+<pre><code> &gt;&gt;&gt; a[3:3]
+[3, 4, 5]
+</code></pre>
+<p>
+<i>DISCLAIMER: I do not claimer that this is how it went but I’ll now talk about how I like to look at slicing</i>
+</p>
+<pre><code> &gt;&gt;&gt; a[3:]
+[3, 4, 5, 6, 7, 8, 9]
+</code></pre>
+<p>
+I like to say that doing this <i>skips</i> the first <i>three</i> elements and gives the rest.
+</p>
+<pre><code> &gt;&gt;&gt; a[:6]
+[0, 1, 2, 3, 4, 5]
+</code></pre>
+<p>
+And this picks the first <i>six</i> elements. Simple really!
+</p>
+<pre><code> &gt;&gt;&gt; a[3:6]
+[3, 4, 5]
+</code></pre>
+<p>
+This just gives the <i>intersection</i> of the two.
+</p>
+<p>
+My two cents.
+</p>
 
     </div>
   </section>
