@@ -9,6 +9,20 @@
         
         
         <item>
+            <title>The Essence of Monte Carlo</title>
+            <description>&lt;p&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Eric_Veach&quot;&gt;Eric Veach&lt;/a&gt; wrote his thesis on &lt;a href=&quot;https://graphics.stanford.edu/papers/veach_thesis/thesis-bw.pdf&quot;&gt;“Robust Monte Carlo Methods for Light Transport Simulation”&lt;/a&gt;. This is a famous piece of work, considered a groundbreaking work in rendering and ubiquitous among graphics researchers and professionals. On page 12, there is a sentence which reads
+&amp;lt;pre&amp;gt;
+The principle of Monte Carlo methods is not that the samples are truly random, but that random samples could be used in their place.
+&amp;lt;/pre&amp;gt; 
+&lt;/p&gt;
+</description>
+            <pubDate>Mon, 11 Jun 2018 04:21:00 +0530</pubDate>
+            <link>http://localhost:4000//bposts/on-monte-carlo.html</link>
+            <guid isPermaLink="true">http://localhost:4000//bposts/on-monte-carlo.html</guid>
+        </item>
+        
+        <item>
             <title>Spam Slam</title>
             <description>&lt;p&gt;
 Oops! This blog is posted as a guest article on another site. Please &lt;a href=&quot;https://hackinout.co/blog/blockchain-track-winner-spamslam/&quot;&gt;click here&lt;/a&gt; to redirect yourself.

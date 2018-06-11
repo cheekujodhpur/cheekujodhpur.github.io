@@ -11,17 +11,16 @@
   <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog - Kumar Ayush</title>
-  <meta name="description" content="I am an everyday data scientist and developer who likes to turn dreams into reality. My magical staff is called an undergraduate degree in Physics mixed with experience in astronomy, web development, computer graphics and management.
-">
+  <title>The Essence of Monte Carlo - Kumar Ayush</title>
+  <meta name="description" content="Eric Veach wrote his thesis on “Robust Monte Carlo Methods for Light Transport Simulation”. This is a famous piece of work, considered a groundbreaking work ...">
   <!-- og tags -->
-  <meta property="og:title" content="Blog - Kumar Ayush" />
+  <meta property="og:title" content="The Essence of Monte Carlo - Kumar Ayush" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://localhost:4000/blog/" />
+  <meta property="og:url" content="http://localhost:4000/bposts/on-monte-carlo.html" />
   <meta property="og:image" content="/images/me_reading.jpg" />
 
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="canonical" href="http://localhost:4000/blog/">
+  <link rel="canonical" href="http://localhost:4000/bposts/on-monte-carlo.html">
   <link rel="stylesheet" href="/css/main.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
@@ -86,106 +85,71 @@
 
       <article id="main">
 
-    <header style="background-image:url('/images/blog_banner.jpg')">
-    <h2>Blog</h2>
-    <p>Heart poured out</p>
-  </header>
-
   <section class="wrapper style5">
-      <div class="inner">
-          
+    <div class="inner">
+        
+        <h2>The Essence of Monte Carlo</h2>
+        <h3></h3>
+        <p><em>11 June 2018</em></p>
 
-<section>
-<div class="row">
-    <div class="6u 12u$(medium)">
-        
-        
-        
-            
-            <header>
-                <h5><a href="/bposts/on-monte-carlo.html">The Essence of Monte Carlo</a></h5>
-                <p><i>June 2018</i> - misc</p>
-            </header>
-            
-        
-        
-        
-        
-        
-        
-        
-            
-            <header>
-                <h5><a href="/bposts/copy-constructor-magic.html">Copy Constructor Magic</a></h5>
-                <p><i>May 2018</i> - coding, cpp</p>
-            </header>
-            
-        
-        
-        
-        
-        
-        
-        
-            
-            <header>
-                <h5><a href="/bposts/splicing.html">On Slicing Python Lists</a></h5>
-                <p><i>June 2016</i> - python, programming</p>
-            </header>
-            
-        
-        
-        
-        
-        
+        <p>
+<a href="https://en.wikipedia.org/wiki/Eric_Veach">Eric Veach</a> wrote his thesis on <a href="https://graphics.stanford.edu/papers/veach_thesis/thesis-bw.pdf">“Robust Monte Carlo Methods for Light Transport Simulation”</a>. This is a famous piece of work, considered a groundbreaking work in rendering and ubiquitous among graphics researchers and professionals. On page 12, there is a sentence which reads
+</p>
+<blockquote>
+  <p>The principle of Monte Carlo methods is not that the samples are truly random, but that random samples could be used in their place.</p>
+</blockquote>
+<p>
+It took me some time to understand what he means, and I am still not sure if I have interpret it well, but pay attention to the following piece of code, using two slightly different functions to compute the value of $\pi$ and see if you see my point.
+</p>
+<pre class="prettyprint"><code class="language-py">import numpy as np                                                              
+                                                                                
+def mc1(N):                                                                     
+    c = 0                                                                       
+    N = int(N)                                                                  
+    for i in range(N):                                                          
+        x = np.random.random()                                                  
+        y = np.random.random()                                                  
+        if (x-0.5)**2 + (y-0.5)**2 &lt; 0.25:                                      
+            c = c+1                                                             
+                                                                                
+    return 4.0*float(c)/N                                                       
+                                                                                
+                                                                                
+def mc2(N):                                                                     
+    c = 0                                                                       
+    _N = int(np.sqrt(N))                                                        
+    for i in range(_N):                                                         
+        for j in range(_N):                                                     
+            x = float(i)/_N                                                     
+            y = float(j)/_N                                                     
+            if (x-0.5)**2 + (y-0.5)**2 &lt; 0.25:                                  
+                c = c+1                                                         
+                                                                                
+    return 4.0*float(c)/(_N*_N)                                                 
+                                                                                
+print mc1(1e1), mc2(1e1)                                                        
+print mc1(1e2), mc2(1e2)                                                        
+print mc1(1e3), mc2(1e3)                                                        
+print mc1(1e4), mc2(1e4)                                                        
+print mc1(1e5), mc2(1e5)                                                        
+print mc1(1e6), mc2(1e6)                                                        
+print mc1(1e7), mc2(1e7)  
+</code></pre>
+<p>
+which generates the output
+</p>
+<pre>3.2 1.77777777778
+3.16 2.76
+3.148 3.08012486993
+3.132 3.13
+3.1404 3.14088287133
+3.14302 3.1413
+3.1420544 3.14153285317
+</pre>
+<p>The true value of $\pi$ upto 5 decimal places is $3.14159$.</p>
+<p>My two cents!</p>
+
     </div>
-
-    <div class="6u 12u$(medium)">
-        
-        
-        
-        
-        
-        
-            
-            <header>
-                <h5><a href="https://hackinout.co/blog/blockchain-track-winner-spamslam/">Spam Slam</a></h5>
-                <p><i>June 2018</i> - hackathon, blockchain, programming</p>
-            </header>
-            
-        
-        
-        
-        
-        
-        
-        
-            
-            <header>
-                <h5><a href="/bposts/witcher-got-irish-mytho.html">Witcher, Game of Thrones and Predestination: Inspirations from Irish Mythology</a></h5>
-                <p><i>June 2016</i> - literature, pop</p>
-            </header>
-            
-        
-        
-        
-        
-        
-        
-        
-            
-            <header>
-                <h5><a href="/bposts/n-points-in-circle.html">Circle enclosing N lattice points</a></h5>
-                <p><i>May 2016</i> - misc, math</p>
-            </header>
-            
-        
-        
-    </div>
-</div>
-</section>
-
-      </div>
   </section>
 
 </article>
