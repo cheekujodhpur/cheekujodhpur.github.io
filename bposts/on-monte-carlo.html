@@ -147,9 +147,6 @@ which generates the output
 3.1420544 3.14153285317
 </pre>
 <p>The true value of $\pi$ upto 5 decimal places is $3.14159$.</p>
-<p><i>Update: July 2019</i></p>
-<p>To add to the explanation of what is happening here, notice that if you were to able to set N to infinity in the second method, you’d be able to generate a perfect sample set and your computation would be exact. For finite N, there always exist points which you will never reach. TIn this simple usecase for Monte Carlo methods, all points are equivalent. However, in a general scenario, all points are not equivalent. That is where Monte Carlo comes into picture. One way to think of it is that method 1 is choosing a union of random sets of points, where each set is selected from the points generated using the second method for a value of N.<br />
-In one dimension, if N = 5, and you are sampling between 0 and 1, the second method would give 0, 0.2, 0.4, 0.6, 0.8 and 1. However, Monte Carlo could sample, say, 0.34 or 0.7, which the second method would return only for a higher value of N.</p>
 <p>My two cents!</p>
 
     </div>
