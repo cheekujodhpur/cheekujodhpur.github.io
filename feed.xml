@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title></title>
+        <title>Kumar Ayush' Blog</title>
         <description>I am an everyday data scientist and developer who likes to turn dreams into reality. My magical staff is called an undergraduate degree in Physics mixed with experience in astronomy, web development, computer graphics and management.
 </description>
-        <link>cheekujodhpur.github.io</link>
-        <atom:link href="cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
+        <link>http://cheekujodhpur.github.io</link>
+        <atom:link href="http://cheekujodhpur.github.io/feed.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
@@ -49,8 +49,8 @@ As we look forward to our jobs for tomorrow - either measure a sample at ultra-l
 &lt;/p&gt;
 </description>
             <pubDate>Fri, 12 Jul 2019 11:08:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/undergrad-memoir.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/undergrad-memoir.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/undergrad-memoir.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/undergrad-memoir.html</guid>
         </item>
         
         <item>
@@ -113,8 +113,8 @@ which generates the output
 &lt;p&gt;My two cents!&lt;/p&gt;
 </description>
             <pubDate>Sun, 10 Jun 2018 22:51:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/on-monte-carlo.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/on-monte-carlo.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/on-monte-carlo.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/on-monte-carlo.html</guid>
         </item>
         
         <item>
@@ -124,8 +124,8 @@ Oops! This blog is posted as a guest article on another site. Please &lt;a href=
 &lt;/p&gt;
 </description>
             <pubDate>Thu, 07 Jun 2018 03:12:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/spamslam.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/spamslam.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/spamslam.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/spamslam.html</guid>
         </item>
         
         <item>
@@ -463,8 +463,8 @@ the error of shadowing, it just isn’t being seen in the output due to a happy 
 &lt;p&gt;Our four cents!&lt;/p&gt;
 </description>
             <pubDate>Sun, 20 May 2018 12:42:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/copy-constructor-magic.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/copy-constructor-magic.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/copy-constructor-magic.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/copy-constructor-magic.html</guid>
         </item>
         
         <item>
@@ -486,8 +486,8 @@ I spent long hours searching for popular Irish mythological stories so we could 
 &lt;/p&gt;
 </description>
             <pubDate>Sat, 18 Jun 2016 07:26:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/witcher-got-irish-mytho.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/witcher-got-irish-mytho.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/witcher-got-irish-mytho.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/witcher-got-irish-mytho.html</guid>
         </item>
         
         <item>
@@ -547,8 +547,8 @@ My two cents.
 &lt;/p&gt;
 </description>
             <pubDate>Thu, 02 Jun 2016 20:51:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/splicing.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/splicing.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/splicing.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/splicing.html</guid>
         </item>
         
         <item>
@@ -563,8 +563,8 @@ My two cents.
 &lt;p&gt;My two cents!&lt;/p&gt;
 </description>
             <pubDate>Sat, 14 May 2016 14:31:00 +0000</pubDate>
-            <link>cheekujodhpur.github.io//bposts/n-points-in-circle.html</link>
-            <guid isPermaLink="true">cheekujodhpur.github.io//bposts/n-points-in-circle.html</guid>
+            <link>http://cheekujodhpur.github.io/bposts/n-points-in-circle.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/n-points-in-circle.html</guid>
         </item>
         
     </channel>
