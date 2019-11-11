@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+  Original Design: Spectral by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Jekyll build mod
+  Modified By: Kumar Ayush
+-->
+<html>
+
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hack InOut 6.0 - Kumar Ayush</title>
+  <meta name="description" content="Hello readers! Meet and I participated in the 6th edition of Hack InOut this year.It was very convenient as both of us are now employed in Bengaluru. We took...">
+  <!-- og tags -->
+  <meta property="og:title" content="Hack InOut 6.0 - Kumar Ayush" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://cheekujodhpur.github.io/bposts/beetlegoose.html" />
+  <meta property="og:image" content="/images/me_reading.jpg" />
+
+  <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="canonical" href="http://cheekujodhpur.github.io/bposts/beetlegoose.html">
+  <link rel="stylesheet" href="/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+  <link rel="alternate" type="application/rss+xml" title="Kumar Ayush" href="http://cheekujodhpur.github.io/feed.xml">
+   <script type="text/x-mathjax-config">                                       
+      MathJax.Hub.Config({                                                          
+                tex2jax: {                                                      
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],                                 
+      processEscapes: true                                                      
+    }                                                                           
+  });                                                                           
+   </script>                                                                   
+   <script type="text/javascript"                                              
+           src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+   </script>
+</head>
+
+
+  <body>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+<header id="header">
+  <h1><a href="/index.html">Kumar Ayush</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            
+            
+            <li><a href="/blog/">Blog</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="/projects/">Projects</a></li>
+            
+            
+            <li><a href="/feed.xml"
+                   class="icon fa-feed"> RSS Feed</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+      <article id="main">
+
+  <section class="wrapper style5">
+    <div class="inner">
+        
+        <h2>Hack InOut 6.0</h2>
+        <h3></h3>
+        <p><em>1 November 2019</em></p>
+
+        <p>Hello readers! Meet and I participated in the 6th edition of <a href="https://hackinout.co">Hack InOut</a> this year.
+It was very convenient as both of us are now employed in Bengaluru. 
+We took a repeat shot at our augmented reality venture that was <a href="/projects/bellatrix.html" target="_blank">Bellatrix</a>.
+I recommend reading that tiny post before you read this post, but it is not critical to understanding the following.
+</p>
+<h4>The Challenge</h4>
+<p>Think of it like you’re making a gaming hardware. Your display is a screen that is being projected upon.
+Your input is an object hitting the screen and a camera detecting the point hit. An alternative method of detecting the point hit is using a LIDAR as in <a href="http://www.initi.org/workss/demonz-i-installation-for-kids-prague-handball-cup-2016">INITI Playgroundz project</a>.
+We want(ed) to achieve the camera-based detection because it then opens the road to easy installation by anyone who has a projector and camera the quality of which comes in your phone. In theory, you could use your phone camera indeed.</p>
+<p>When we had attempted this problem in the name of Bellatrix, we had two significant problems:
+<ul>
+    <li>You think you can detect the ball via the difference of the frame that the camera detects and what we know is projected. However, the projector has an intense (in the literal meaning of high intensity) color emissivity. This means that the camera does not see the ball in its natural colour. It sees a ball colour graded by the projected frame. This makes it very difficult to discern the ball from the background.
+        Sure, you could make arguments that the projection on the ball is <i>warped</i> and so on but you have to keep in mind that we're working with a low-resolution RPi camera. Such effects are also harder to distinguish.
+We were heavily relying on the ease of detecting a bright blob in heavily ambiguous video feeds. We put all our eggs in this one basket which had a big hole in it.</li>
+    <li>The key computation in the project is taking the difference of the frame the camera reads and the frame you project. The read operation requires several transformations which are heavy enough to drop your framerates to about 5 fps. That game is not likely to be a fun experience to play.</li>
+</ul>
+</p>
+<p>
+The way we tackled both of those issues in Bellatrix is by making our game a dartboard with a white background and the board was drawn with extra light font. This makes it easy to detect the ball <b>and</b> you do not need a high frame rate for this game. The judges were impressed. It worked. <br />
+This time around, we wanted to improve on these areas. Spoiler here is that we made zero improvements on the ball detection and miserably failed after making a colourful game. Even the poor but working algorithm from Bellatrix failed. We ended up one step behind on this front. Anyway, this post is more about glorifying what we <i>did</i> achieve rather than did not so here goes.
+</p>
+<p>
+We had an RPi 4 which turns out to hold 4 cores. The algorithm is simple. <ol>
+    <li>Mark each frame with a unique binary code. We colored the four corners in a particular way, so you get 1 to 16.</li>
+    <li>The camera read and render are running on separate processes. The rendering process writes 16 frames in a looping fashion to a shared mem object. </li>
+    <li>Assuming your read is not lagging by more than 16 frames, you can pick the projected frame from the shared mem and do a diff (which is done via a third process)</li>
+    <li>The diff process will send the location of the hit point when it has it to the render process which can then include it in the game logic</li>
+</ol>
+This worked beautifully. We could churn out 30 fps and more throttled only by the occasional overheating of the RPi. However, the whole thing together was a disaster since we could not detect the bright yellow ball flying across. What would we do differently next time?
+</p>
+<p>
+<ul>
+    <li>Perhaps focus on the CV algorithm as its own thing, take images in various light conditions and perfect this separately</li>
+    <li>Try to tune the RPi camera more manually. The read colour versus the write colour was obviously different. We did turn off AWB and set a manual shutter speed, but we could have done a better job of selecting the manual WB.</li>
+    <li>Get a fan for the RPi OR get a more production-ready, less hobby friendly motherboard.</li>
+</ul>
+</p>
+<p>
+I take extreme pride in returning to old problems after learning new techniques. That means this is not over. Until next time...
+</p>
+<p>Thanks to <em>Meet Udeshi</em> for working with me on this project. Our github repository can be found <a href="https://github.com/cheekujodhpur/beetlegoose">here</a>.</p>
+
+
+    </div>
+  </section>
+
+</article>
+
+
+      <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    
+    
+    
+    <li><a target="_blank" href="https://twitter.com/kumarayush4ever" class="icon fa-twitter"
+           ><span class="label">twitter</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://github.com/cheekujodhpur" class="icon fa-github"
+           ><span class="label">github</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://linkedin.com/in/cheekujodhpur" class="icon fa-linkedin-square"
+           ><span class="label">linkedin-square</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://facebook.com/cheekujodhpur" class="icon fa-facebook-official"
+           ><span class="label">facebook-official</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://plus.google.com/u/0/+cheekujodhpur" class="icon fa-google-plus-square"
+           ><span class="label">google-plus-square</span></a></li>
+    
+    
+    
+  </ul>
+  <ul class="copyright">
+    <li>&copy; 
+    
+    2019
+    Kumar Ayush</li>
+    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+  </ul>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+<script>
+function handleLinks () {
+    // Don't open our own site's links in new tabs
+    var host = location.hostname 
+        // Grab and loop over all <a> elements
+        var allLinks = document.querySelectorAll('a') 
+        for (var i = 0; i < allLinks.length; ++i) {
+            // if links are external and not empty
+            if (allLinks[i].hostname !== host && allLinks[i].hostname !== '') {
+                allLinks[i].target = '_blank'
+            }
+        }
+}
+</script>
+<script src="/js/main.js"></script>
+
+
+    </div>
+
+  </body>
+
+</html>

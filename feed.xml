@@ -9,6 +9,56 @@
         
         
         <item>
+            <title>Hack InOut 6.0</title>
+            <description>&lt;p&gt;Hello readers! Meet and I participated in the 6th edition of &lt;a href=&quot;https://hackinout.co&quot;&gt;Hack InOut&lt;/a&gt; this year.
+It was very convenient as both of us are now employed in Bengaluru. 
+We took a repeat shot at our augmented reality venture that was &lt;a href=&quot;/projects/bellatrix.html&quot; target=&quot;_blank&quot;&gt;Bellatrix&lt;/a&gt;.
+I recommend reading that tiny post before you read this post, but it is not critical to understanding the following.
+&lt;/p&gt;
+&lt;h4&gt;The Challenge&lt;/h4&gt;
+&lt;p&gt;Think of it like you’re making a gaming hardware. Your display is a screen that is being projected upon.
+Your input is an object hitting the screen and a camera detecting the point hit. An alternative method of detecting the point hit is using a LIDAR as in &lt;a href=&quot;http://www.initi.org/workss/demonz-i-installation-for-kids-prague-handball-cup-2016&quot;&gt;INITI Playgroundz project&lt;/a&gt;.
+We want(ed) to achieve the camera-based detection because it then opens the road to easy installation by anyone who has a projector and camera the quality of which comes in your phone. In theory, you could use your phone camera indeed.&lt;/p&gt;
+&lt;p&gt;When we had attempted this problem in the name of Bellatrix, we had two significant problems:
+&lt;ul&gt;
+    &lt;li&gt;You think you can detect the ball via the difference of the frame that the camera detects and what we know is projected. However, the projector has an intense (in the literal meaning of high intensity) color emissivity. This means that the camera does not see the ball in its natural colour. It sees a ball colour graded by the projected frame. This makes it very difficult to discern the ball from the background.
+        Sure, you could make arguments that the projection on the ball is &lt;i&gt;warped&lt;/i&gt; and so on but you have to keep in mind that we're working with a low-resolution RPi camera. Such effects are also harder to distinguish.
+We were heavily relying on the ease of detecting a bright blob in heavily ambiguous video feeds. We put all our eggs in this one basket which had a big hole in it.&lt;/li&gt;
+    &lt;li&gt;The key computation in the project is taking the difference of the frame the camera reads and the frame you project. The read operation requires several transformations which are heavy enough to drop your framerates to about 5 fps. That game is not likely to be a fun experience to play.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The way we tackled both of those issues in Bellatrix is by making our game a dartboard with a white background and the board was drawn with extra light font. This makes it easy to detect the ball &lt;b&gt;and&lt;/b&gt; you do not need a high frame rate for this game. The judges were impressed. It worked. &lt;br /&gt;
+This time around, we wanted to improve on these areas. Spoiler here is that we made zero improvements on the ball detection and miserably failed after making a colourful game. Even the poor but working algorithm from Bellatrix failed. We ended up one step behind on this front. Anyway, this post is more about glorifying what we &lt;i&gt;did&lt;/i&gt; achieve rather than did not so here goes.
+&lt;/p&gt;
+&lt;p&gt;
+We had an RPi 4 which turns out to hold 4 cores. The algorithm is simple. &lt;ol&gt;
+    &lt;li&gt;Mark each frame with a unique binary code. We colored the four corners in a particular way, so you get 1 to 16.&lt;/li&gt;
+    &lt;li&gt;The camera read and render are running on separate processes. The rendering process writes 16 frames in a looping fashion to a shared mem object. &lt;/li&gt;
+    &lt;li&gt;Assuming your read is not lagging by more than 16 frames, you can pick the projected frame from the shared mem and do a diff (which is done via a third process)&lt;/li&gt;
+    &lt;li&gt;The diff process will send the location of the hit point when it has it to the render process which can then include it in the game logic&lt;/li&gt;
+&lt;/ol&gt;
+This worked beautifully. We could churn out 30 fps and more throttled only by the occasional overheating of the RPi. However, the whole thing together was a disaster since we could not detect the bright yellow ball flying across. What would we do differently next time?
+&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Perhaps focus on the CV algorithm as its own thing, take images in various light conditions and perfect this separately&lt;/li&gt;
+    &lt;li&gt;Try to tune the RPi camera more manually. The read colour versus the write colour was obviously different. We did turn off AWB and set a manual shutter speed, but we could have done a better job of selecting the manual WB.&lt;/li&gt;
+    &lt;li&gt;Get a fan for the RPi OR get a more production-ready, less hobby friendly motherboard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I take extreme pride in returning to old problems after learning new techniques. That means this is not over. Until next time...
+&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;em&gt;Meet Udeshi&lt;/em&gt; for working with me on this project. Our github repository can be found &lt;a href=&quot;https://github.com/cheekujodhpur/beetlegoose&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+            <pubDate>Fri, 01 Nov 2019 16:13:24 +0530</pubDate>
+            <link>http://cheekujodhpur.github.io/bposts/beetlegoose.html</link>
+            <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/beetlegoose.html</guid>
+        </item>
+        
+        <item>
             <title>Undergrad Memoir</title>
             <description>&lt;p&gt;&lt;i&gt;The following article was written for and published in Physics Depart Newsletter at IIT Bombay. Requested and edited by Toshi Parmar. Co-authored by Sandesh Kalantre&lt;/i&gt;&lt;/p&gt;
 
@@ -48,7 +98,7 @@ At the end of our stay here, we diverged onto two different paths - as a financi
 As we look forward to our jobs for tomorrow - either measure a sample at ultra-low temperatures or use the Black-Scholes pricing model, all of it would be impossible without our education as an Engineer and as a Physicist and as much more during our stay here. Hindsight is always 20/20, and getting an EP degree was the best thing to do.  If we could rewind 4 years and could choose a different route, would we? Absolutely for one, and even perhaps do it once more so. Thank You!
 &lt;/p&gt;
 </description>
-            <pubDate>Fri, 12 Jul 2019 11:08:00 +0000</pubDate>
+            <pubDate>Fri, 12 Jul 2019 16:38:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/undergrad-memoir.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/undergrad-memoir.html</guid>
         </item>
@@ -112,7 +162,7 @@ which generates the output
 &lt;p&gt;The true value of $\pi$ upto 5 decimal places is $3.14159$.&lt;/p&gt;
 &lt;p&gt;My two cents!&lt;/p&gt;
 </description>
-            <pubDate>Sun, 10 Jun 2018 22:51:00 +0000</pubDate>
+            <pubDate>Mon, 11 Jun 2018 04:21:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/on-monte-carlo.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/on-monte-carlo.html</guid>
         </item>
@@ -123,7 +173,7 @@ which generates the output
 Oops! This blog is posted as a guest article on another site. Please &lt;a href=&quot;https://hackinout.co/blog/blockchain-track-winner-spamslam/&quot;&gt;click here&lt;/a&gt; to redirect yourself.
 &lt;/p&gt;
 </description>
-            <pubDate>Thu, 07 Jun 2018 03:12:00 +0000</pubDate>
+            <pubDate>Thu, 07 Jun 2018 08:42:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/spamslam.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/spamslam.html</guid>
         </item>
@@ -302,7 +352,7 @@ ret
   You can see that there are `lea rax, [rbp-0x30]` instructions before every function call.&lt;/li&gt;
 
 &lt;li&gt; `call &amp;lt;_ZN3foo2gzEv&amp;gt;` calls foo::gz() using instance of foo at `[rbp-0x30]`.
-  Notice that this instance isn&#39;t initialised at all when we call gx(), gy() or gz().
+  Notice that this instance isn't initialised at all when we call gx(), gy() or gz().
   Hence, whatever values `[rbp-0x30]` has would be garbage. The calls return garbage
   and store it in local registers&lt;/li&gt;
 
@@ -462,7 +512,7 @@ the error of shadowing, it just isn’t being seen in the output due to a happy 
 
 &lt;p&gt;Our four cents!&lt;/p&gt;
 </description>
-            <pubDate>Sun, 20 May 2018 12:42:00 +0000</pubDate>
+            <pubDate>Sun, 20 May 2018 18:12:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/copy-constructor-magic.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/copy-constructor-magic.html</guid>
         </item>
@@ -477,15 +527,15 @@ Game of Thrones, the popular TV series, is the second thing that comes to my min
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Political and sexual intrigue, although since Witcher centers around one individual and his destiny, the political aspects are perhaps not as elaborate as GoT.&lt;/li&gt;
-&lt;li&gt;Witcher has an elven race &lt;i&gt;Aen Sidhe&lt;/i&gt;, and GoT&#39;s white walkers are like &lt;i&gt;sidhe&lt;/i&gt; made of ice, both derived from Ao Si in Irish mythology. We also know that Children of the Forest made White Walkers so they represent &lt;i&gt;Aen Sidhe&lt;/i&gt; better, and then they have a sister race called &lt;i&gt;Aen Elle&lt;/i&gt; which looks like a representation of the Others in Irish mythology, and of WW in GoT. Witcher&#39;s &lt;i&gt;Aen Elle&lt;/i&gt; have their own version of rogue riders called the Wild Hunt.&lt;/li&gt;
-&lt;li&gt;A major problem which surrounds the world as per a prophecy is the coming of a great winter; a great iceage, the Big Winter, the Big Chill, Aep Deireadh and many other names used for a long iceage. Witcher brings in a bit of science too by discussing that this will be effectively due to a change in tilt of Earth&#39;s axis.&lt;/li&gt;
-&lt;li&gt;Both of them have a central character who can travel through Space and Time. This is Witcher&#39;s Cirilla or Ciri, and GoT&#39;s Brandon Stark. Although, in the case of GoT, it is only fan theories which talk about a predestination. Witcher, on the other hand, is very explicit to center the story around Ciri&#39;s predestination.&lt;/li&gt;
+&lt;li&gt;Witcher has an elven race &lt;i&gt;Aen Sidhe&lt;/i&gt;, and GoT's white walkers are like &lt;i&gt;sidhe&lt;/i&gt; made of ice, both derived from Ao Si in Irish mythology. We also know that Children of the Forest made White Walkers so they represent &lt;i&gt;Aen Sidhe&lt;/i&gt; better, and then they have a sister race called &lt;i&gt;Aen Elle&lt;/i&gt; which looks like a representation of the Others in Irish mythology, and of WW in GoT. Witcher's &lt;i&gt;Aen Elle&lt;/i&gt; have their own version of rogue riders called the Wild Hunt.&lt;/li&gt;
+&lt;li&gt;A major problem which surrounds the world as per a prophecy is the coming of a great winter; a great iceage, the Big Winter, the Big Chill, Aep Deireadh and many other names used for a long iceage. Witcher brings in a bit of science too by discussing that this will be effectively due to a change in tilt of Earth's axis.&lt;/li&gt;
+&lt;li&gt;Both of them have a central character who can travel through Space and Time. This is Witcher's Cirilla or Ciri, and GoT's Brandon Stark. Although, in the case of GoT, it is only fan theories which talk about a predestination. Witcher, on the other hand, is very explicit to center the story around Ciri's predestination.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 I spent long hours searching for popular Irish mythological stories so we could establish a connection. Witcher was published before ASOIF and ASOIF was published by the time Witcher was well known to the English speaking world. These are just my reflections.
 &lt;/p&gt;
 </description>
-            <pubDate>Sat, 18 Jun 2016 07:26:00 +0000</pubDate>
+            <pubDate>Sat, 18 Jun 2016 12:56:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/witcher-got-irish-mytho.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/witcher-got-irish-mytho.html</guid>
         </item>
@@ -546,7 +596,7 @@ This just gives the &lt;i&gt;intersection&lt;/i&gt; of the two.
 My two cents.
 &lt;/p&gt;
 </description>
-            <pubDate>Thu, 02 Jun 2016 20:51:00 +0000</pubDate>
+            <pubDate>Fri, 03 Jun 2016 02:21:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/splicing.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/splicing.html</guid>
         </item>
@@ -562,7 +612,7 @@ My two cents.
 &lt;p&gt;Thus, the center must be an irrational point. I do not know if any irrational point would do though.&lt;/p&gt;
 &lt;p&gt;My two cents!&lt;/p&gt;
 </description>
-            <pubDate>Sat, 14 May 2016 14:31:00 +0000</pubDate>
+            <pubDate>Sat, 14 May 2016 20:01:00 +0530</pubDate>
             <link>http://cheekujodhpur.github.io/bposts/n-points-in-circle.html</link>
             <guid isPermaLink="true">http://cheekujodhpur.github.io/bposts/n-points-in-circle.html</guid>
         </item>
